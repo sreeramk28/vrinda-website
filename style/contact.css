@@ -1,0 +1,61 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+}
+.jumbotro {
+	margin: 0;
+	padding: 0;
+}
+.col-border {
+	border-right: 1px solid #f2f2f2;
+}
+.horiz {
+	font-weight: 700;
+	font-size: 20px;
+	border-bottom: 1px solid #f2f2f2;
+	line-height: 0.2em;
+	
+}
+.bgt {
+	background-color: #fff;
+	padding-right: 20px;
+	color: #1A4069;
+}
+.line {
+	width: 100%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+input[type=text]:focus {
+	outline: none;
+	border-bottom: 1px solid #C19858;
+}
+input[type=email]:focus {
+	outline: none;
+	border-bottom: 1px solid #C19858;
+}
+textarea:focus {
+	outline: none;
+	border-bottom: 1px solid #C19858;
+}
+.line2 {
+	width: 100%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #E8E8E8;
+}
+.submit_style {
+	border: 1px solid #1A4069;
+	border-radius: 0;
+	background-color: #1A4069;
+	color: #fff;
+	padding: 5px 20px 5px 20px;
+}
+.formbg {
+	background-color: #FBFBFB;
+}

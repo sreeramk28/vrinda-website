@@ -1,0 +1,71 @@
+
+.class_carousel_div{
+	padding: 0;
+	border-radius: 0;
+	border-bottom: solid 1px #9f9f9f;
+}
+#id_carousel_heading {
+	font-size: 30px;
+	font-weight: bold;
+	
+}
+.class_carousel_general {
+	position: relative;
+	height: 100vh;
+	background: url('../assets/01.jpg') no-repeat center bottom/cover;
+	border-bottom: solid 1px #9f9f9f;
+}
+.class_carousel_general p{
+	max-width: 600px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.class_carousel_general h1{
+	color: #fff;
+	font-weight: bold;
+
+}
+
+.class_carousel_general button{
+	
+	border: none;
+	background-color: #fff;
+	/*font-size: 14px;*/
+
+
+	font-size: 0.8rem;
+/*	border: 1px solid #1a4069;*/
+	border-radius: 0px;
+	padding: 0.4rem;
+}
+
+.class_carousel_general button a{
+	/*color: #fff;*/
+	color: #000;
+	text-decoration: none; 
+}
+.class_carousel_tab{
+	 cursor:pointer;
+	 border-right: solid 1px #9f9f9f;
+	 padding-top: 10px;
+	 padding-bottom: 5px;
+	 /*display: table-cell;*/
+	 vertical-align: middle;
+
+}
+
+.class_carousel_tab p{
+	line-height: 1;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+}
+
+.class_carousel_tab > p > span{
+	color: #666666;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+	padding-bottom: 5px;
+}

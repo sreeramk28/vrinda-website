@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--prashant, sarvjeet - mgmt
+
+delivery
+siddharth, kamal, dipankar, 
+rashi, manoj, sakshi-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700" rel="stylesheet">
+  <link rel="stylesheet" href="style/about.css">
+  <link rel="stylesheet" href="style/navbar.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/inplace_content.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>About Us Page</title>
+  <style>
+  	html {
+  		scroll-behavior: smooth;
+  	}
+    body{
+      background-image: url("assets/dotted-bg-dark.png");
+       /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: auto; 
+      font-family: 'Fira Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    
+    
+    <nav id="id_nav_handler" class="navbar navbar-expand-md class_navbar_custom2 sticky-top">
+
+          <div class="container class_navbar_handler_container">
+            
+            <a class="navbar-brand" href="home.html"><img width="130px" height="50px" class="class_brand_image" src="assets/FinalLogoVrinda.png"></a>
+          <button id="id_custom2_button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+              <span id="id_custom2_icon" class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+              
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul  class="navbar-nav">
+                    <li class="nav-item dropdown">
+                  <a id="navbarDropdown" class="nav-link class_nav_link_custom2 " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">SERVICES</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#execsearch">Executive Search</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#inter_rec">International Recruitment</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#perm_rec">Permanent Recruitment</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#staffing">Staffing Solutions</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#recpo">Recruitment Process Outsourcing</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="class_nav_link_custom2 nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span id="link_name">ABOUT US</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item  class_custom_nav_dropdown_item" href="about.html">Vrinda Global</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="about.html#id_team_members">The Team</a>
+                      
+                      <!--a class="dropdown-item class_custom_nav_dropdown_item" href="about.html#id_delivery_teams">Advisory Board</a-->
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="class_nav_link_custom2 nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">INSIGHTS</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="#">Industry Reports</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="blogs.html">Articles/Blogs</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="class_nav_link_custom2 nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">JOBS</span>
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="class_nav_link_custom2 nav_link_custom2 nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">CONTACT US</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="contact.html#reachus">Reach Us</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="contact.html#offices">Offices</a>
+                  </div>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+
+	
+	<div class="jumbotron jumbotron-fluid jumbostyle class_full_h">
+		<div class="text-center class_topic_header">
+	        <br><br><br><br>
+	        <p style="font-weight: 700; font-size:25px;">ABOUT US</p>
+	        <p style="font-size: 20px;">
+	          We know the art of recruitment
+	        </p>
+	        <br><br><br><br>
+	    </div>
+	    <br><br>
+	    
+	    <div class="container">
+		    <div class="row">
+		    	<div class="col-md-1"></div>	
+			    <div class="col-md">	
+			    	<p class="text-left" style="font-size: 15px; color:#666666;">
+			    	Incorporated in 2006, this entrepreneurial journey has metamorphosed to a transnational organisation with business operations in Asia, Europe & US.<br> 
+					<br>
+					With a meticulous focus on driving successful hires, we’re a new type of partner and a new type of recruiting system. Our systematic, process driven approach to recruitment ensures engagement with the right talent and a superior candidate experience.<br> 
+					<br>
+					Our offices in London, San Jose, Dubai, New Delhi & Gurgaon are independent units lead by our regional directors, supported by highly talented back-office in Karnal (Haryana, India).<br> 
+					<br>
+					Our clients include 32 of fortune 100 companies. <br>
+
+			    	</p>
+			    	<br>
+		    		<hr style="width:30%;">
+		    	</div>
+	    		<div class="col-md-1"></div>
+	    	</div>
+	    	<br>
+			<div class="row">
+				<div class="col mx-auto text-center">
+					<br><p style="color:#9f9f9f">OUR TEAM</p>
+					<p><b>Team of thoughtful leaders</b></p>
+					<p style="color:#9f9f9f; font-size: 14px;" >We agree with “To become distinguished in your industry, you have to constantly manage, <br>master and maximise your time”.</p>
+					<div style="margin-left: 50%; border-left: 1px solid #1A4069; height: 50px;">
+					</div>
+					<br>
+					<a href="#id_team_members"><button style="border-radius: 0; border: 1px solid #1A4069; color: white; padding: 0.4rem; font-size: 0.8rem; background-color: #1A4069;">
+						Management team     
+    				</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div id="id_team_members"></div>
+	<br><br><br>
+	<section>
+		
+	    <div class="container">
+	    	<div class="row">
+		    	<div class="col-lg-1">
+		    	</div>
+		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    		<div class="card">
+					  <img class="card-img-top" height="240" src="assets/Prashant2.jpeg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Prashant Chaudhary</b></p>
+					  	<p style="color:#9f9f9f;"> MD & CEO </p>
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Prashant, brings in 15 years of executive search and recruitment experience with him. Before he founded Vrinda Global in 2006, he was the head of sales for a US recruitment firm for 3 years. 
+					    </p>
+						<hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/in/chaudharyprashant/"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div>
+		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    		<div class="card">
+
+					  <img class="card-img-top" height="240" src="assets/Sarvjeet.jpg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	 <p class="card-title"><b>Sarvjeet Singh Midha</b></p>
+					  	 <p style="color:#9f9f9f;"> COO </p> 
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Sarvjeet, has 15 years of rich telecom experience, with Tata Teleservices, where he was heading north India for Enterprise solutions. At Vrinda, he heads Business Operations and Modernization.
+					    </p>
+						<hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/in/sarvjeet-singh-midha-ab2061108"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>	
+					  </div>
+					</div>
+
+		    	</div>
+		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    		<div class="card">
+
+					  <img class="card-img-top" height="240" src="assets/Siddarth.jpg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Siddarth Puri</b></p>	
+					  	<p style="color:#9f9f9f;"> Head - Global Search </p>
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Siddarth heads our global search operations in Delhi. Over a career spanning 12 years, he has worked across industries like FMCG Durables, Telecom, Fintech.
+					    </p>
+						<hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+
+					</div>
+		    	</div>
+		    	<div class="col-lg-1">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<br>
+		    </div>
+		    <div class="row">
+		    	<div class="col-lg-1">
+		    	</div>
+		    	<!--div class="col-md">
+		    		<div class="card">
+					  <img class="card-img-top" height="240" src="assets/Bhavya Bhardwaj.jpg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Bhavya Bhardwaj</b></p>
+					  	<p style="color:#9f9f9f;"> Team Lead </p>
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Bhavya is a comprehensive and critical expert in Talent Acquisition with over 4 years of experience. She is rigorous in her research and diligent to address the needs of the firms and has a very unique “target chase” approach for both applicants and companies.
+					    </p>
+					    <hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div-->
+		    	
+		    	<!--div class="col-md">
+		    		<div class="card">
+					  <img class="card-img-top" height="240" src="assets/Divya Sharma.JPG" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	 <p class="card-title"><b>Divya Sharma</b></p>
+					  	 <p style="color:#9f9f9f;"> Team Lead </p> 
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Divya joined Vrinda Global in 2015 in Banking and Financial Services domain. She has exceptional ability to understand business needs and ensuring client satisfaction. She is a strong HR professional having 5 years of experience in Talent acquisition.
+						</p>
+						<hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div-->
+		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    		<div class="card">
+					  <img class="card-img-top" height="240" src="assets/Kamal.jpg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Kamal Mehta</b></p>
+					  	<p style="color:#9f9f9f;"> Cluster Head BFSI </p>
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Kamal Mehta has been with Vrinda since inception. He is a dynamic leader with expertise in delivery and client servicing. He heads the BFSI vertical with delivery and client relations.
+
+					    </p>
+						<hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+
+					  </div>
+					</div>
+		    	</div>
+		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    		<div class="card">
+
+					  <img class="card-img-top" height="240" src="assets/Dipankar.jpg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Dipankar Dutt</b></p>
+					  	<p style="color:#9f9f9f;">Client Relations </p> 
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Dipankar, started his career with a film production company as Line producer after 10 years at The Times of India.
+					    	He manages Client relations for Vrinda and looks at international outreach.
+						</p>
+						<hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/in/dipankardutt/"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div>
+		    	<div class="col-xs-12 col-sm-6 col-lg"></div>
+		    	<div class="col-lg-1">
+		    	</div>
+		    </div>
+	    </div>
+    </section>
+    <br><br>
+    <div class="text-center">
+			<b>To know more about the delivery teams</b><br><br>
+			<a href="#id_delivery_teams"><button style="border-radius: 0; border: 1px solid #1A4069; color: white; padding: 0.4rem; font-size: 0.8rem;background-color: #1A4069;">
+				Delivery team  
+			</button></a>
+			<br>
+			<br>
+			<div style="margin-left: 50%; border-left: 1px solid #1A4069; height: 50px;">
+			</div>
+			
+			
+	</div>
+	<div id="id_delivery_teams"></div>
+	<br><br>
+    <section>
+    	<div class="container">
+		    <br>
+		    <div class="row">
+		    	<div class="col-lg-1">
+		    	</div>
+		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    		<div class="card">
+
+					  <img class="card-img-top" height="280" src="assets/Rashi Chaudhary.jpg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Rashi Chaudhary</b></p>	
+					  	<p style="color:#9f9f9f;"> Team Lead International </p>
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	High-energy Sourcing Specialist, who strives to build long-term, mutually beneficial relationships with candidates and clients alike. Rashi is responsible for recruiting talent from US, UK, UAE, New Zealand and India for the Real Estate, Healthcare, Technology etc. 
+					    </p>
+					    <hr>
+						<div class="text-center">
+							<a href="mailto:rashichaudhary@vrindaconsultants.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div>
+		    	<!--div class="col-md">
+		    		<div class="card">
+					  <img class="card-img-top" height="240" src="assets/Vishal.jpg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Vishal Nagpal</b></p>
+					  	<p style="color:#9f9f9f;"> Team Lead </p>
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Vishal is Competent Professional with 3+ Years of Experience in the field of Recruitment and Talent Management. Started his career with Vrinda Global Pvt Ltd since 2016. He is responsible for delivery of Building Material and Facility and security domain.  
+					    </p>
+					    <hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div>
+		    	<div class="col-md">
+		    		<div class="card">
+
+					  <img class="card-img-top" height="240" src="assets/Sonia.png" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	 <p class="card-title"><b>Sonia Narula</b></p>
+					  	 <p style="color:#9f9f9f;"> Team Lead </p> 
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Sonia is passionate, an integral Talent acquisition professional with over 10 years of experience of working in Executive Search Space. Her expertise lies in senior leadership and management hiring which involves delivering across strategic assignments. 
+						</p>
+						<hr>
+						<div class="text-center">
+							<a href="mailto:sonia@vrindaconsultants.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div-->
+		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    		<div class="card">
+
+					  <img class="card-img-top" height="280" src="assets/Manoj.png" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Manoj Kumar</b></p>	
+					  	<p style="color:#9f9f9f;"> Vertical Head </p>
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Manoj manages Vrinda’s Key Client Relationship & Service Delivery majorly for leading Conglomerates into FMCG, ITES, Building Materials Industry. He comes with 15 years of diverse experience. He has successfully partnered with the key clients and ramped up lateral hiring. 
+					    </p>
+					    <hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div>
+		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    		<div class="card">
+					  <img class="card-img-top" height="280" src="assets/Sakshi Makkar.jpeg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Sakshi Makkar</b></p>
+					  	<p style="color:#9f9f9f;"> Head - Oil and Gas </p>
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Sakshi Makkar specializes in executive search. She has ten years of experience and has worked across industries in India as well as
+					    	Internationally. She is a great leader.<br> Sakshi heads Oil and Gas here in Vrinda Global.<br>
+					    </p>
+					    <hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+
+					  </div>
+					</div>
+		    	</div>
+		    	<div class="col-md-1">
+		    	</div>
+		    </div>
+		    <br>
+		    <!--div class="row">
+		    	<div class="col-md-1">
+		    	</div>
+		    	<div class="col-md">
+		    		<div class="card">
+					  <img class="card-img-top" height="240" src="assets/Monika.jpg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Monika Kukreja</b></p>
+					  	<p style="color:#9f9f9f;"> Vertical Head </p>
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Monika joined team Vrinda in 2012. She has total 8 years of experience purely in Global Hiring for Multiple Engineering Roles. 
+					    	She has also been engaged in Automotive and Healthcare to attract and place the right talent.  
+					    </p>
+					    <hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div>
+		    	<div class="col-md">
+		    		<div class="card">
+
+					  <img class="card-img-top" height="240" src="assets/Rahul.jpg" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	 <p class="card-title"><b>Rahul Sharma</b></p>
+					  	 <p style="color:#9f9f9f;"> BFSI Vertical Head  </p> 
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	A Recruitment Consultant with 9 years experience with specialization in Banking & financial industry hiring. Managing sales & recruitment for banks, NBFC’s & Insurance in Pan India. He represents a candidate through all phases of hiring. 
+						</p>
+						<hr>
+						<div class="text-center">
+							<a href="mailto:services@vrindaglobal.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div>
+		    	<div class="col-md">
+		    		<div class="card">
+
+					  <img class="card-img-top" height="240" src="assets/Meenakshi.png" alt="Card image cap">
+					  <div class="card-body text-center">
+					  	<p class="card-title"><b>Meenakshi Chopra</b></p>	
+					  	<p style="color:#9f9f9f;">  BFSI Vertical Head </p>
+					    <p style="color:#9f9f9f; font-size: 13px;" class="card-text">
+					    	Meenakshi joined Vrinda in 2012 as a Recruitment Consultant in Banking and Finance Industry. Now, she heads Delivery for Branch and Retail banking. She specializes in answering questions in Leadership and Talent strategies. 
+					    </p>
+					    <hr>
+						<div class="text-center">
+							<a href="mailto:meenakshi@vrindaconsultants.com">
+							<img class="px-2" width="37" style="" src="assets/DarkTwitter (5).png"></a>
+							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (4).png"></a>
+							<a href="#!"><img class="px-2" width="37" style="border-left: 1px solid #d3d3d3;" src="assets/DarkTwitter (3).png"></a>
+							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" height="20" style="border-left: 1px solid #d3d3d3;" 
+							src="assets/DarkTwitter (2).png"></a>
+						</div>
+					  </div>
+					</div>
+		    	</div>
+		    	<div class="col-md-1">
+		    	</div>
+		    </div>
+		    <br>
+		    <div class="row">
+		    	<div class="col-md-1">
+		    	</div>
+		    	
+		    	<div class="col-md">
+		    	</div>
+		    	<div class="col-md">
+		    	</div>
+		    	<div class="col-md-1">
+		    	</div>
+		    </div-->
+		</div>
+		<br><br>
+    	
+    </section>
+    <div id = "achievements" class="jumbotron jumbotron-fluid jumbostyle2">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-1"><br></div>
+    				<div class="col-md-4">
+    					<br>
+    					<div class="class_about_heading">
+				            
+				            <p class="my-auto class_heading_content1">
+				              OUR ACHIEVEMENTS
+				            </p>
+				            <p class="class_heading_content2">
+				              Optimism is key for success
+				            </p>
+				        </div>
+				        <div class="class_about_description">
+				            <p class="class_descript_content">
+				             	Believing & trusting in the team and mission helped
+							 	<br>us to reach this position. There are miles to go.
+				            </p>
+				        </div>
+				        <div class="class_knowmore_wrap">
+				            <button class="class_knowmore_button" name="knowmore">
+				              Know More
+				              <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				                <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+				                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+				              </svg>
+				            </button>
+				        </div>
+    				</div>
+    				<div class="col-md-1"><br></div>
+    				<div class="col-md-4">
+    					<br>
+    					<table style="display: inline-block;">
+    						<tr>
+    							<td>
+    								<p class="class_stat">158
+    								<hr style="width:15px; background-color: #FFD700; margin-left: 0;">
+    								<p style="font-size:14px; color: #787878;">Clients</p></p>
+    							</td>
+    							<td>
+    								<p style="padding-left: 80px;"></p>
+    							</td>
+    							<td>
+    								<p class="class_stat">
+    									60k
+    									<hr style="width:15px; background-color: #FFD700; margin-left: 0;">
+    									<p style="font-size:14px; color: #787878;">Placed</p>
+    								</p>
+    							</td>
+    						</tr>
+    						<tr>
+    							<td><br></td>
+    						</tr>
+    						<tr>
+    							<td>
+    								<p class="class_stat">7
+    								<hr style="width:15px; background-color: #FFD700; margin-left: 0;">
+    								<p style="font-size:14px; color: #787878;">Countries</p></p>
+    							</td>
+    							<td>
+    								<p style="padding-left: 80px;"></p>
+    							</td>
+    							<td>
+    								<p class="class_stat">1M
+    								<hr style="width:15px; background-color: #FFD700; margin-left: 0;">
+    								<p style="font-size:14px; color: #787878;">Applications</p></p>
+    							</td>
+    						</tr>
+    					</table>
+    				</div>
+    				
+    				<div class="col-md-2">
+    					<br>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    <section id="id_testimonials">
+    	<div class="text-center">
+    		<p style="color:#9f9f9f">TESTIMONIALS</p>
+    		<p style="font-weight: 700">The evidence of success</p>
+    		<p style="color:#9f9f9f;font-size: 14px">
+    			We are mostly endorsed for our preciseness, sectoral experience & work ethics.
+    		</p>
+    	</div>
+    	<br>
+    	<div class="container">
+    		<div class="row">
+	    		<div class="col-md-1"></div>
+	    		<div class="col-md">
+	    			<div class="card">
+	    				<div class="card-body text-center">
+	    					<p style="font-size: 14px; color: #9f9f9f;">We are mostly endorsed for our
+							preciseness, sectoral experience & work
+							ethics. Lorem ipsum dolor sit amet,
+							consectetuer adipiscing elit, sed diam
+							nonummy nibh euismod tincidunt ut
+							laoreet dolore magna aliquam erat
+							volutpat. Ut wisi enim</p>
+							<br>
+							<div style="">
+								<img style="display: inline-block;" src="assets/team-1-300x300.jpg" height="60" width="60"> &nbsp
+							 	<p style="display: inline-block; font-size: 13px; color: #9f9f9f;"><span style="font-weight: bold; color: #000;">Michael Scofield</span><br> CEO - IBM</p>
+							</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="col-md">
+	    			<div class="card">
+	    				<div class="card-body text-center">
+	    					<p style="font-size: 14px; color: #9f9f9f;">We are mostly endorsed for our
+							preciseness, sectoral experience & work
+							ethics. Lorem ipsum dolor sit amet,
+							consectetuer adipiscing elit, sed diam
+							nonummy nibh euismod tincidunt ut
+							laoreet dolore magna aliquam erat
+							volutpat. Ut wisi enim</p>
+							<br>
+							<div style="">
+								<img style="display: inline-block;" src="assets/team-1-300x300.jpg" height="60" width="60"> &nbsp
+							 	<p style="display: inline-block; font-size: 13px; color: #9f9f9f;"><span style="font-weight: bold; color: #000;">Michael Scofield</span><br> CEO - IBM</p>
+							</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="col-md">
+	    			<div class="card">
+	    				<div class="card-body text-center">
+	    					<p style="font-size: 14px; color: #9f9f9f;">We are mostly endorsed for our
+							preciseness, sectoral experience & work
+							ethics. Lorem ipsum dolor sit amet,
+							consectetuer adipiscing elit, sed diam
+							nonummy nibh euismod tincidunt ut
+							laoreet dolore magna aliquam erat
+							volutpat. Ut wisi enim</p>
+							<br>
+							<div style="">
+								<img style="display: inline-block;" src="assets/team-1-300x300.jpg" height="60" width="60"> &nbsp
+							 	<p style="display: inline-block; font-size: 13px; color: #9f9f9f;"><span style="font-weight: bold; color: #000;">Michael Scofield</span><br> CEO - IBM</p>
+							</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="col-md-1"></div>
+	    	</div>
+    	</div>
+    	<br>
+    </section>
+    
+	
+
+		<!-- Footer section -->
+<div class="container">
+			<div class="row">
+          <div class="col-md-1"></div>
+  				<div class="col-md-5" style="border: solid #c19858;"></div>
+  				<div class="col-md-6"></div>
+  		</div>
+	</div>
+	<div class="jumbotron class_footer_jumbo">
+			<footer class="page-footer font-small">
+  		<div class="container text-center text-md-left">
+    		<div class="row">
+            <div class="col-md-1"></div>
+      			<div class="col-md-5 mx-auto class_footer_text1">
+        			<div class="class_footer_brand_image">
+                <img class="img-fluid" src="assets/Asset 7Vrinda Services.png">
+
+              </div>
+        			<p>Incorporated in 2006, this entrepreneurial journey has
+						metamorphosed to a transnational organisation with business
+						operations in Asia, Europe & US. Our Clients include 32 fortune 100
+						companies. Strong sectoral expertise, experience and consistency
+						made the way for success.
+        			</p>
+              <div class="class_icon_mage_contact_div">
+                  <div class="class_footer_icon_image">
+                    <img src="assets/Contact Us Home .png">
+                  </div>
+                  <p class="class_footer_contact"><a href="tel:91 9789753200">+91 9789 753 200</a>
+                  </p>
+              </div>
+              <div class="class_icon_mage_contact_div">
+                  <div class="class_footer_icon_image">
+                    <img src="assets/Mail IconHome .png">
+                  </div>
+                  <p class="class_footer_contact">
+                    <a href = "mailto: support@vrindaglobal.com">support@vrindaglobal.com</a>
+                  </p>
+              </div>
+        				<!-- <p><img src="assets/Contact Us Home .png"> +91 9789 753 200</p>
+        				<p><img src="assets/Mail IconHome .png">support@vrindaglobal.com</p> -->  		
+            </div>
+      <!-- <hr class="clearfix w-100 d-md-none"> -->
+            <div class="col-md-5" >
+              <div class="row class_footer_right_half_row" >
+                <div class="col class_footer_get_in_touch" >
+                  <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Get in Touch</p>
+                  <ul class="list-unstyled">
+                    <li>
+                      
+                      <div class="class_footer_icon_image_social_media">
+                        <img src="assets/Linked InHome .png">
+                      </div>
+                      <span><a href="https://www.linkedin.com/company/vrinda-consultants/" target="_blank">LinkedIn</a></span>
+                                
+                    </li>
+                    <li>
+                      <div class="class_footer_icon_image_social_media">
+                        <img src="assets/TwitterHome .png">
+                      </div>
+                      <span><a href="https://twitter.com/Vrinda_Jobs" target="_blank">Twitter</a></span>
+            
+                    </li>
+                    <li>
+                      <div class="class_footer_icon_image_social_media">
+                        <img src="assets/FacebookHome .png">
+                      </div>
+                      <span><a href="https://www.facebook.com/Vrindaconsultants" target="_blank">Facebook</a></span>
+                    </li>
+                    <li>
+                      <div class="class_footer_icon_image_social_media">
+                        <img src="assets/WhatsappHome .png">
+                      </div>
+                      <span><a href="#!">Whatsapp</a></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col class_footer_site_map">
+                  <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Site Map</p>
+
+                    <ul class="list-unstyled">
+                      <li style="padding-top: 3px">
+                        <span><a href="about.html" target="_blank">About us</a></span>
+                      </li>
+                      <li style="padding-top: 3px">
+                        <span><a href="blogs.html" target="_blank">Insights</a></span>
+                      </li>
+                      <li style="padding-top: 3px">
+                        <span><a href="services.html" target="_blank">Services</a></span>
+
+                      </li>
+                      <li style="padding-top: 3px">
+                        <span><a href="notfound.html" target="_blank">Jobs</a></span>
+                      </li>
+                      <li style="padding-top: 3px">
+                        <span><a href="contact.html" target="_blank">Contact us</a></span>
+                      </li>
+                    </ul>
+                </div>
+
+                <div class="col mx-auto class_footer_latest_updates">
+                  <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Latest Updates</p>
+                  <div>
+                    <p><i>May 06, 2020</i></p>
+                    <p><span>HR Surey Report</span></p>
+                    <p>Impact of COVID-19 onbusiness sector</p>
+                  </div>
+                  <div>
+                    <p><i>April 12, 2020</i></p>
+                    <p><span>Gender Diversity</span></p>
+                    <p>Effects, insights on gender diversity in the workforce</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+    </div>
+  </div>
+</footer>
+</div>
+
+<div class="jumbotron class_copyright_jumbo">
+	<div class="container">
+		<div class="footer-copyright py-3">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+          <div class="class_footer_copyright">
+            <a style="text-decoration: none; color: #909090" >Copyright © VrindaGlobal, All Rights Reserved</a>
+          </div>
+          <div class="class_footer_cookies">
+            <a href="tnc.html">Terms & Conditions</a>
+            <a href="#!" id="id_cookie_popup">Cookies</a>
+            <a href="disclaimer.html" style="border: none;">Privacy Statement</a>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+  		</div>
+	</div>
+</div>
+
+
+<!--script type="text/javascript" src="js/carousel_run.js"></script-->
+
+
+
+
+
+
+
+
+
+<!-- cookies -->
+
+<div class="cookie-banner" style="display: none">
+	<p>
+    	By using our website, you agree to our 
+    	<a href="tnc.html">cookie policy</a>
+  	</p>
+  <button class="close">&times;</button>
+</div>
+
+</body>
+</html>

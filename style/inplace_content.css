@@ -1,0 +1,140 @@
+@media (min-width: 992px) {
+	
+	#id_office_locations {
+		/*height: 100vh;*/
+	}
+}
+.class_about_heading {
+	border-left: 3px solid #165e9e;
+	padding-left: 1rem;
+	margin-left: 0;
+}
+.class_heading_content1 {
+	color: #9f9f9f;
+}
+.class_heading_content2 {
+	font-weight: 700;
+}
+.class_about_description {
+	padding-left: 1rem;
+	color: #9f9f9f;
+	font-size: 0.8rem;
+}
+
+.class_knowmore_button {
+	font-size: 0.8rem;
+	background-color: #165e9e;
+	color: white;
+	border: 1px solid #165e9e;
+	border-radius: 0px;
+	padding: 0.4rem;
+}
+.class_knowmore_wrap {
+	padding-left: 1rem;
+}
+div > .class_col_padding > p {
+	font-size: 0.8rem;
+	color: #787878;
+	font-weight: normal;
+	padding-top: 0.8rem;
+}
+div > .class_col_padding {
+	font-size: 0.8rem;
+	color: #165e9e;
+	font-weight: 700;
+}
+.checker {
+
+}
+
+@media (min-width: 768px) {
+	.class_col_padding {
+		padding-left: 15px;
+		padding-right: 5px;
+	}	
+	.class_row_relative {
+		position: relative;
+		 
+	}
+	.class_col_border {
+		margin-top: 3%;
+		padding-left: 0;
+		position: static;
+	}
+	.class_col_border::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		border-left: 1px solid #d3d3d3;
+	}
+}
+#id_industry_insights {
+	background-color: #165e9e;
+
+}
+.class_industry_head1 {
+	font-size: 1.2rem;
+	color: white;
+}
+.class_industry_head2 {
+	font-size: 1.5rem;
+	color: white;
+	font-weight: 700;	
+}
+.class_industry_description {
+	font-size: 1rem;
+	color: #9f9f9f;
+}
+.class_downloadnow_button {
+	background-color: #f9a81a;
+	color: #165e9e;
+	border: 1px solid #165e9e;
+	border-radius: 0px;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	font-size: 0.8rem;
+		
+}
+
+td > img {
+/*margin-left: 1rem;
+margin-right: 1rem;*/
+	margin-bottom: 1rem;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+
+}
+#id_thewmap {
+	height: auto;
+	max-width: 100%;
+}
+@media (max-width: 992px) {
+	#id_thewmap {
+	height: 300px;	
+	width: 100%;
+	max-width: 100%;
+	}	
+}
+
+.class_jumbo_class_row_relative{
+	/*border: 1px solid;*/
+	background-color: #f5f5f5;
+	/*padding: 0;*/
+	padding-bottom: 0;
+	/*padding-right: 0;
+	padding-left: 0;*/
+	padding-top: 0;
+}
+.class_row_relative {
+	background-color: #f5f5f5;
+	/*border: solid 1px;*/
+	/*width: 100%;*/
+	/*margin-right: 0;*/
+}
+
+.class_about_box_full_width {
+	width: 100%;
+}

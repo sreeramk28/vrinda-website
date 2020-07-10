@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/inplace_content.css">
+  <link rel="stylesheet" type="text/css" href="style/carousel.css">
+  <link rel="stylesheet" type="text/css" href="style/navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Home Page</title>
+  <style>
+    body{
+      font-family: 'Fira Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/cookies.js"></script>
+
+
+    <!--++++++++++++++++++++++++ Navigation bar section--the white +++++++++++++++++++++++++++-->
+
+    <nav id="id_nav_handler" class="navbar navbar-expand-md class_navbar_custom2 fixed-top">
+
+          <div class="container class_navbar_handler_container">
+            
+            <a class="navbar-brand" href="home.html"><img width="130px" height="50px" class="class_brand_image" src="assets/FinalLogoVrinda.png"></a>
+          <button id="id_custom2_button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+              <span id="id_custom2_icon" class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+              
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul  class="navbar-nav">
+                    <li class="nav-item dropdown">
+                  <a id="navbarDropdown" class="nav-link class_nav_link_custom2 " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">SERVICES</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#execsearch">Executive Search</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#inter_rec">International Recruitment</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#perm_rec">Permanent Recruitment</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#staffing">Staffing Solutions</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#recpo">Recruitment Process Outsourcing</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="class_nav_link_custom2 nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span id="link_name">ABOUT US</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item  class_custom_nav_dropdown_item" href="about.html">Vrinda Global</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="about.html#id_team_members">The Team</a>
+                      
+                      <!--a class="dropdown-item class_custom_nav_dropdown_item" href="about.html#id_delivery_teams">Advisory Board</a-->
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="class_nav_link_custom2 nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">INSIGHTS</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="#">Industry Reports</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="blogs.html">Articles/Blogs</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="class_nav_link_custom2 nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">JOBS</span>
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="class_nav_link_custom2 nav_link_custom2 nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">CONTACT US</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="contact.html#reachus">Reach Us</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="contact.html#offices">Offices</a>
+                  </div>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+    
+    
+
+	<!--+++++++++++++++++++ Carousel section ++++++++++++++++++++++++++-->
+	<!-- <div class="class_carousel_div">
+		<div>
+			<div  class="class_carousel_general class_carousel_container1">
+				<div class="container">
+		        	<div class="row">
+		        		<div class="col-md-1"></div>
+		        		<div class="col-md-10">
+			          		<h1>Executive Search</h1>
+			          		<p>An innovative way to discover key individuals who are not visible within the marketplace and not actively looking for a career change.</p>
+				          	<button>Know More
+					            <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					                  <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+					                  <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+					            </svg>
+				          	</button>
+				        </div>
+				        <div class="col-md-1 my-auto">
+				        	
+				        </div>
+		        	</div>
+				</div>
+			</div>
+			<div  class="class_carousel_general class_carousel_container2">
+				<div class="container">
+		        	<div class="row">
+		        		<div class="col-md-1"></div>
+		        		<div class="col-md-10">
+			          		<h1>International Recruitment</h1>
+			          		<p>The technological revolutions & globalization provides a great opportunity for talented workforce to scout for overseas opportunities.</p>
+				          	<button>Know More
+					            <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					                  <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+					                  <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+					            </svg>
+				          	</button>
+				        </div>
+				        <div class="col-md-1"></div>
+		        	</div>
+				</div>
+			</div>
+			<div  class="class_carousel_general class_carousel_container3">
+				<div class="container">
+		        	<div class="row">
+		        		<div class="col-md-1"></div>
+		        		<div class="col-md-10">
+			          		<h1>Permanent Recruitment</h1>
+			          		<p>With strong database and expertise in key business verticals, we deliver the best talent in the shortest time possible.</p>
+				          	<button>Know More
+					            <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					                  <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+					                  <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+					            </svg>
+				          	</button>
+				        </div>
+				        <div class="col-md-1"></div>
+		        	</div>
+				</div>
+			</div>
+			<div  class="class_carousel_general class_carousel_container4">
+				<div class="container">
+		        	<div class="row">
+		        		<div class="col-md-1"></div>
+		        		<div class="col-md-10">
+			          		<h1>Staffing Solutions</h1>
+			          		<p>With trained personnel & technology, we help your business with a cost-effective staffing solutions which strengthens efficiency, productivity across skill sets.</p>
+				          	<button>Know More
+					            <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					                  <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+					                  <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+					            </svg>
+				          	</button>
+				        </div>
+				        <div class="col-md-1"></div>
+		        	</div>
+				</div>
+			</div>
+			<div  class="class_carousel_general class_carousel_container5">
+				<div class="container">
+		        	<div class="row">
+		        		<div class="col-md-1"></div>
+		        		<div class="col-md-10">
+			          		<h1>Recruitment Process Outsourcing</h1>
+			          		<p>With deep expertise, world class resources, and a focus on innovation, we can help you tackle even the most complex and challenging talent needs.</p>
+				          	<button>Know More
+					            <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					                  <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+					                  <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+					            </svg>
+				          	</button>
+				        </div>
+				        <div class="col-md-1"></div>
+		        	</div>
+				</div>
+			</div>
+		</div>
+		<div class="container class_carousel_tab_control">
+			<div class="row">
+				<div style="border-right: solid 1px 
+				#9f9f9f;" class="col-md-1"></div>
+	            <div id="id_carousel_tab1" class="col-md-2 class_carousel_tab">
+	              <p><span>01</span><br>Executive<br>Search</p>
+	            </div>
+	            <div id="id_carousel_tab2" class="col-md-2 class_carousel_tab">
+	              <p><span>02</span><br>International<br>Recruitment</p>
+	            </div>
+	            <div id="id_carousel_tab3" class="col-md-2 class_carousel_tab">
+	            	<p><span>03</span><br>Permanent<br>Recruitment</p>
+	            </div>
+	            <div id="id_carousel_tab4" class="col-md-2 class_carousel_tab">
+	            	<p><span>04</span><br>Staffing<br>Solutions</p>
+	            </div>
+	            <div id="id_carousel_tab5" class="col-md-2 class_carousel_tab">
+	              <p><span>05</span><br>Recruitment<br>Process Outsourcing</p>
+	            </div>
+	            <div class="col-md-1"></div>
+	        </div>
+		</div>
+	</div> -->
+  <!-- Carousel section -->
+  <div style="position:relative;padding-top: 0;" id="id_carousel_jumbo" class="class_carousel_general jumbotron jumbotron-fluid">
+
+    <nav id="id_nav_handler" class="navbar navbar-expand-md navbar-light class_navbar_custom1">
+
+          <div class="container class_navbar_handler_container">
+           
+            <a class="navbar-brand" href="home.html"><img width="130px" height="50px" class="class_brand_image" src="assets/Asset 7Vrinda Services.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+             
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul  class="navbar-nav">
+                    <li class="nav-item dropdown">
+                  <a id="navbarDropdown" class="nav-link class_nav_link_custom1 " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">SERVICES</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#execsearch">Executive Search</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#inter_rec">International Recruitment</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#perm_rec">Permanent Recruitment</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#staffing">Staffing Solutions</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="services.html#recpo">Recruitment Process Outsourcing</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="class_nav_link_custom1 nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span id="link_name">ABOUT US</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item  class_custom_nav_dropdown_item" href="about.html">Vrinda Global</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="about.html#id_team_members">The Team</a>
+                     
+                      <!--a class="dropdown-item class_custom_nav_dropdown_item" href="about.html#id_delivery_teams">Advisory Board</a-->
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="class_nav_link_custom1 nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">INSIGHTS</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="#">Industry Reports</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="blogs.html">Articles/Blogs</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="class_nav_link_custom1 nav-link" href="" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">JOBS</span>
+                  </a>    
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="class_nav_link_custom1 nav_link_custom2 nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="link_name">CONTACT US</span> <span id="link_symbol"><i class="fa fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu class_custom_nav_dropdown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="contact.html#reachus">Reach Us</a>
+                      <a class="dropdown-item class_custom_nav_dropdown_item" href="contact.html#offices">Offices</a>
+                      <!-- <div class="dropdown-divider"></div> -->
+                  </div>
+                </li>
+                <!-- <li>
+                  <div style="padding: 5px">
+                    <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    </svg>
+                  </div>
+                </li> -->
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+    <div style="position:absolute; top:35%; left: 0; right: 0;"class="class_carou_content container">
+        <div class="row">
+          <!--div class="col-md-1"></div-->
+          <div class="col-md-10" style="margin-left: 80px;">
+          	  <p style="display: none;" class="class_slide_num">1</p>
+              <p class="text-left" id="id_carousel_heading">Executive Search</p>
+              <p id="id_carousel_description">An innovative way to discover key individuals who are<br> not visible within the marketplace and not actively<br> looking for a career change.</p>
+              <button><a href="services.html#execsearch">Know More</a>
+                <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                      <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+                </svg>
+              </button>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+    </div>
+    
+    <div id="id_carousel_tabs" style="background-color:#fff; position: absolute; bottom: 0; left:0; right: 0;">
+
+      <div style="" class="container class_carousel_tab_control">
+        <div class="row">
+          <div style="border-right: solid 1px 
+          #9f9f9f;" class="col-md-1"></div>
+                <div id="id_carousel_tab1" class="col-md-2 class_carousel_tab">
+                  <p><span class="class_tab_number1" style="color: #165e9e;">01</span><br>Executive<br>Search</p>
+                </div>
+                <div id="id_carousel_tab2" class="col-md-2 class_carousel_tab">
+                  <p><span class="class_tab_number2">02</span><br>International<br>Recruitment</p>
+                </div>
+                <div id="id_carousel_tab3" class="col-md-2 class_carousel_tab">
+                  <p><span class="class_tab_number3">03</span><br>Permanent<br>Recruitment</p>
+                </div>
+                <div id="id_carousel_tab4" class="col-md-2 class_carousel_tab">
+                  <p><span class="class_tab_number4">04</span><br>Staffing<br>Solutions</p>
+                </div>
+                <div id="id_carousel_tab5" class="col-md-2 class_carousel_tab">
+                  <p><span class="class_tab_number5">05</span><br>Recruitment<br>Process Outsourcing</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+      </div>
+    </div>
+    <br><br><br>
+    <div id="arrows" style="height: 9%; background-color:#fff; position: absolute; bottom: 0; left:0; right: 0;">
+      <a id="id_prev_arrow" style="cursor:pointer;float: left;" class="my-2">
+      <svg class="bi bi-arrow-left" width="2em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  		<path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+  		<path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+	  </svg>
+	  </a>
+	  <a id="id_next_arrow" style="cursor:pointer;float: right;" class="my-2">
+	      <svg class="bi bi-arrow-right" width="2em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	        <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+	        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+	      </svg>
+	  </a>
+    </div>
+  </div>
+
+
+  <!-- About Us Section -->
+  <section id="id_about_company"> 
+
+    <div class="jumbotron" style="padding: 0; background-color: #fff; margin-bottom: 0;">
+          <div class="container">
+      
+      <div class="row">
+        <div class="col-md-1">
+          
+        </div>
+        <div class="checker col-md-5 my-auto">
+          <div class="class_about_heading">
+            <p class="my-auto class_heading_content1">
+              A TALENT SOURCING COMPANY
+            </p>
+            <p class="class_heading_content2">
+              Flexibility, Transparency and Compassion
+            </p>
+          </div>
+          <div class="class_about_description">
+            <p class="class_descript_content">
+              With a meticulous focus on driving successful hires, we’re a new type of
+              partner and a new type of recruiting system. Our systematic, process
+              driven approach to recruitment ensures engagement with the right talent
+              and a superior candidate experience
+            </p>
+          </div>
+          <div class="class_knowmore_wrap">
+            <button class="class_knowmore_button" name="knowmore">
+              <a href="about.html" target="_blank" style="color: #fff; text-decoration: none;">Know More</a>
+              <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+              </svg>
+            </button>
+          </div>
+          <br>
+        </div>
+        <div class="col-md-5" style="height: 400px;background-image: url('assets/About imageHome.jpg');background-size: cover; background-position:center;">
+          <!-- <img src="assets/About imageHome .png" style="max-height: 100%; width: 100%"> -->
+        </div>
+        <div class="col-md-1">
+          
+        </div>  
+      </div>  
+    </div>      
+    </div>
+    
+
+    <!-- <br> -->
+    <div id="id_boxes" class="jumbotron class_jumbo_class_row_relative">
+          <div class="container class_jumbo_class_row_relative">
+      <div class="row class_row_relative">
+      <div class="class_about_space1 col-md-1">
+        <!-- <br> -->
+      </div>
+      <div class="class_about_box col class_col_border">
+      	<br>
+        <div class="text-center class_col_padding">
+          <img height="60" width="70" src="assets/Sectoral ExpertiseHome .png">
+          <br><br>
+          <span>Sectoral Expertise</span>
+          <p>Our extensive experience allows us to
+          collaborate with players of all sizes,
+          including some benchmarks, and
+          leaders in various industries on their
+          markets.</p> 
+        </div>
+      </div>
+      <div class="class_about_box col class_col_border">
+
+        <div class="text-center class_col_padding">
+          <img height="60" width="70" src="assets/Evidence Based RecruitmentHome .png">
+          <br><br>
+          <span>Evidence Based Recruitment</span>
+          <p>Our approach, is focused on
+          irrefutable facts and data, enabling
+          you and your organization to
+          thrive in the new era of
+          talent acquisition.</p>
+        </div>
+      </div>
+      <div class="class_about_box col class_col_border">
+        <div class="text-center class_col_padding">
+          <img height="60" width="70" src="assets/Global PresenceHome .png">
+          <br><br>
+          <span>Global Presence</span>
+          <p>We're working across continents. And
+          as we work together, we value
+          local cultures and the way
+          things are done.</p>
+        </div>
+      </div>
+      <div class="class_about_box col class_col_border">
+        <div class="text-center class_col_padding">
+          <img height="60" width="70" src="assets/Work Ethics IconHome .png">
+          <br><br>
+          <span>Work Ethics</span>
+          <p>It's the essence of our conviction,
+          we follow high standards of
+          work ethics, unconditionally.</p>
+        </div>
+      </div> 
+      <div class="class_about_space2 col-md-1 class_col_border">
+        
+      </div>
+    </div>
+    </div>
+    </div>
+    
+  </section>
+
+
+
+  <!-- Office Locations section-->
+  <section id="id_office_locations">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-6">
+          <div style="padding-left: 10px; padding-right: 2.5rem;">
+            <img id = "id_thewmap" src="assets/Map.png" usemap="#worldmap">
+            <map name="worldmap">
+              <area shape="rect" coords="30,120,150,180" href="#!">
+              <area shape="rect" coords="310,120,360,210" href="#!">
+              <area shape="rect" coords="250,170,290,210" href="#!">
+              <area shape="rect" coords="180,100,240,130" href="#!">
+              <area shape="rect" coords="370,220,470,280" href="#!">
+            </map>
+          </div>
+        </div>
+        <div class="my-auto col-md-4">
+          <br>
+          <div style="margin-left: 50px;" class="class_about_heading">
+            <p class="my-auto class_heading_content1">
+              GLOBAL REACH
+            </p>
+            <p class="class_heading_content2">
+              5 offices across 3 continents
+            </p>
+          </div>
+          <div style="margin-left: 50px;" class="class_about_description">
+            <p class="class_descript_content">
+              Our offices in London, San Jose, Dubai, New Delhi &  Gurgaon are independent units lead by our regional
+              directors, supported by highly talented back-office in
+              India.
+            </p>
+          </div>
+          <div style="margin-left: 50px;" class="class_knowmore_wrap">
+            <button class="class_knowmore_button" name="knowmore">
+              <a href="contact.html" target="_blank" style="color: #fff; text-decoration: none;">Know More</a>
+              <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+              </svg>
+            </button>
+          </div>
+          <br>
+        </div>
+        <div class="col-md-1">
+          <br>
+        </div>
+      </div> 
+      <div class="row">
+        <br>
+      </div>
+      
+    </div> 
+    
+  
+
+  <!-- industry insights section -->
+	  <section id="id_industry_insights" style="background-color: #112238; background-image: url('assets/meeting.png'); background-blend-mode: overlay;">
+	    <div class="container"> 
+	      <div class="row">
+	        <div class="my-auto col-md">
+	          <br><br>
+	          <div class="text-center"> 
+	            <p class="class_industry_head1">INDUSTRY INSIGHTS</p>
+	            <p class="class_industry_head2">
+	              The impact of COVID-19 outbreak on business across sector
+	            </p>
+	            <p class="class_industry_description">
+	              A qualitative research with useful insights on the impacts, re-engineering & handling business<br>
+	              across sectors, functions, business operating locations & organisation size.
+	            </p>
+	            <button class="class_downloadnow_button" name="knowmore">
+	              Download Now
+	            </button>
+	          </div>
+	          <br>
+	        </div>
+	        <br>
+	      </div>
+	    </div>
+	  </section>
+	</section>
+  <!-- clients section -->
+    <section id="id_clients_fortune">
+      <div class="container">
+        <!-- <div class="row" style="border:solid 1px;">
+          <br><br>
+        </div> -->
+        <br>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-6">
+            <div class="class_client_grid">
+              <table>
+              	<tr>
+              		<td><img class="img-fluid" src="assets/cl (1).png"></td>
+              		<td><img class="img-fluid" src="assets/cl (25).png"></td>
+              		<td><img class="img-fluid" height="70" width="60" src="assets/cl (3).png"></td>
+              		<td><img class="img-fluid" height="70" width="60" src="assets/cl (4).png"></td>
+              		<td><img class="img-fluid" src="assets/cl (5).png"></td>
+              	</tr>
+              	<tr>
+              		<td><img class="img-fluid" src="assets/cl (6).png"></td>
+              		<td><img class="img-fluid" height="70" width="60" src="assets/cl (7).png"></td>
+              		<td><img class="img-fluid" height="70" width="80" src="assets/cl (29).png"></td>
+              		<td><img class="img-fluid" style="padding-left:20px;"src="assets/cl (9).png"></td>
+              		<td><img class="img-fluid" height="60" width="90" src="assets/cl (10).png"></td>
+              	</tr>
+              	<tr>
+              		<td><img class="img-fluid" height="80" width="70" src="assets/cl (11).png"></td>
+              		<td><img class="img-fluid" height="70" width="60" src="assets/cl (12).png"></td>
+              		<td><img class="img-fluid" src="assets/cl (22).png"></td>
+              		<td><img class="img-fluid" src="assets/cl (14).png"></td>
+              		<td><img class="img-fluid" src="assets/cl (24).png"></td>
+              	</tr>
+              	<tr>
+              		<td><img class="img-fluid" height="70" width="60" src="assets/cl (16).png"></td>
+              		<td><img class="img-fluid" src="assets/cl (17).png"></td>
+              		<td><img class="img-fluid" height="70" width="60" src="assets/cl (26).png"></td>
+              		<td><img class="img-fluid" style="padding-left: 10px;"height="70" width="80" src="assets/cl (27).png"></td>
+              		<td><img class="img-fluid" src="assets/cl (30).png"></td>
+              	</tr>
+              		
+             </table>
+            </div>
+          </div>
+          
+          <div class="my-auto col-md-4">
+            
+            <div style="margin-left: 50px;" class="class_about_heading">
+              <p class="my-auto class_heading_content1">
+                CLIENTS INCLUDE
+              </p>
+              <p class="class_heading_content2">
+                32 of fortune 100 companies
+              </p>
+            </div>
+            <div style="margin-left: 50px;" class="class_about_description">
+              <p class="class_descript_content">
+                Our client base extends from BFSI, IT to
+                Manufacturing, Oil & Gas sectors.
+              </p>
+            </div>
+            <div style="margin-left: 50px;" class="class_knowmore_wrap">
+              <button class="class_knowmore_button" name="knowmore">
+                Know More
+                <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                  <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+                </svg>
+              </button>
+            </div>
+            <br>
+          </div>
+          <div class="col-md-1"></div>
+        </div> 
+        <div class="row">
+          <br><!-- <br><br> -->
+        </div>
+        
+      </div> 
+      
+    </section>
+
+	<!-- Footer section -->
+<div class="container">
+			<div class="row">
+          <div class="col-md-1"></div>
+  				<div class="col-md-5" style="border: solid #c19858;"></div>
+  				<div class="col-md-6"></div>
+  		</div>
+	</div>
+	<div class="jumbotron class_footer_jumbo">
+			<footer class="page-footer font-small">
+  		<div class="container text-center text-md-left">
+    		<div class="row">
+            <div class="col-md-1"></div>
+      			<div class="col-md-5 mx-auto class_footer_text1">
+        			<div class="class_footer_brand_image">
+                <img class="img-fluid" src="assets/Asset 7Vrinda Services.png">
+
+              </div>
+        			<p>Incorporated in 2006, this entrepreneurial journey has
+						metamorphosed to a transnational organisation with business
+						operations in Asia, Europe & US. Our Clients include 32 fortune 100
+						companies. Strong sectoral expertise, experience and consistency
+						made the way for success.
+        			</p>
+              <div class="class_icon_mage_contact_div">
+                  <div class="class_footer_icon_image">
+                    <img src="assets/Contact Us Home .png">
+                  </div>
+                  <p class="class_footer_contact"><a href="tel:91 9789753200">+91 9789 753 200</a>
+                  </p>
+              </div>
+              <div class="class_icon_mage_contact_div">
+                  <div class="class_footer_icon_image">
+                    <img src="assets/Mail IconHome .png">
+                  </div>
+                  <p class="class_footer_contact">
+                    <a href = "mailto: support@vrindaglobal.com">support@vrindaglobal.com</a>
+                  </p>
+              </div>
+        				<!-- <p><img src="assets/Contact Us Home .png"> +91 9789 753 200</p>
+        				<p><img src="assets/Mail IconHome .png">support@vrindaglobal.com</p> -->  		
+            </div>
+      <!-- <hr class="clearfix w-100 d-md-none"> -->
+            <div class="col-md-5" >
+              <div class="row class_footer_right_half_row" >
+                <div class="col class_footer_get_in_touch" >
+                  <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Get in Touch</p>
+                  <ul class="list-unstyled">
+                    <li>
+                      
+                      <div class="class_footer_icon_image_social_media">
+                        <img src="assets/Linked InHome .png">
+                      </div>
+                      <span><a href="https://www.linkedin.com/company/vrinda-consultants/" target="_blank">LinkedIn</a></span>
+                                
+                    </li>
+                    <li>
+                      <div class="class_footer_icon_image_social_media">
+                        <img src="assets/TwitterHome .png">
+                      </div>
+                      <span><a href="https://twitter.com/Vrinda_Jobs" target="_blank">Twitter</a></span>
+            
+                    </li>
+                    <li>
+                      <div class="class_footer_icon_image_social_media">
+                        <img src="assets/FacebookHome .png">
+                      </div>
+                      <span><a href="https://www.facebook.com/Vrindaconsultants" target="_blank">Facebook</a></span>
+                    </li>
+                    <li>
+                      <div class="class_footer_icon_image_social_media">
+                        <img src="assets/WhatsappHome .png">
+                      </div>
+                      <span><a href="#!">Whatsapp</a></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col class_footer_site_map">
+                  <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Site Map</p>
+
+                    <ul class="list-unstyled">
+                      <li style="padding-top: 3px">
+                        <span><a href="about.html" target="_blank">About us</a></span>
+                      </li>
+                      <li style="padding-top: 3px">
+                        <span><a href="blogs.html" target="_blank">Insights</a></span>
+                      </li>
+                      <li style="padding-top: 3px">
+                        <span><a href="services.html" target="_blank">Services</a></span>
+
+                      </li>
+                      <li style="padding-top: 3px">
+                        <span><a href="notfound.html" target="_blank">Jobs</a></span>
+                      </li>
+                      <li style="padding-top: 3px">
+                        <span><a href="contact.html" target="_blank">Contact us</a></span>
+                      </li>
+                    </ul>
+                </div>
+
+                <div class="col mx-auto class_footer_latest_updates">
+                  <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Latest Updates</p>
+                  <div>
+                    <p><i>May 06, 2020</i></p>
+                    <p><span>HR Surey Report</span></p>
+                    <p>Impact of COVID-19 onbusiness sector</p>
+                  </div>
+                  <div>
+                    <p><i>April 12, 2020</i></p>
+                    <p><span>Gender Diversity</span></p>
+                    <p>Effects, insights on gender diversity in the workforce</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+    </div>
+  </div>
+</footer>
+</div>
+
+<div class="jumbotron class_copyright_jumbo">
+	<div class="container">
+		<div class="footer-copyright py-3">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+          <div class="class_footer_copyright">
+            <a style="text-decoration: none; color: #909090" >Copyright © VrindaGlobal, All Rights Reserved</a>
+          </div>
+          <div class="class_footer_cookies">
+            <a href="tnc.html">Terms & Conditions</a>
+            <a href="#!" id="id_cookie_popup">Cookies</a>
+            <a href="disclaimer.html" style="border: none;">Privacy Statement</a>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+  		</div>
+	</div>
+</div>
+
+
+<!--script type="text/javascript" src="js/carousel_run.js"></script-->
+
+
+
+
+
+
+
+
+
+<!-- cookies -->
+
+<div class="cookie-banner" style="display: none">
+	<p>
+    	By using our website, you agree to our 
+    	<a href="tnc.html">cookie policy</a>
+  	</p>
+  <button class="close">&times;</button>
+</div>
+
+
+
+</body>
+</html>

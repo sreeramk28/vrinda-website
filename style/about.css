@@ -1,0 +1,42 @@
+.class_topic_header {
+	background-color: #112238; 
+	background-image: url('../assets/headerbckg.jpg'); 
+	background-blend-mode: overlay;
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    opacity: 0.9;
+    color: white;
+    
+}
+.class_full_h {
+	
+	
+
+}
+.jumbostyle {
+	background-color: #FFF; 
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.jumbostyle2 {
+	background-color: #f2f2f2;
+}
+.card {
+	padding: 15px 15px 0 15px;
+	border-radius: 0;
+	box-shadow: 0px 1px #9f9f9f;
+}
+.card-body {
+	line-height: 1.3rem;
+	padding-left: 0;
+	padding-right: 0;
+}
+.class_stat {
+	font-weight: 700;
+	font-size: 20px;
+	color: #1a4069;
+	line-height: 0.2rem;
+}

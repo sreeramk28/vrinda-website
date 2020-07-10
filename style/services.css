@@ -1,0 +1,117 @@
+.class_jumbotron_first{
+	height: 80vh;
+	border-radius: 0;
+	background-image: url("../assets/HPInternationalRecruitmentHome.png");
+	text-align: center;
+}
+
+.jumbotron-content{
+	margin: auto;
+	padding-top: 150px;
+	color: #fff;
+}
+
+.jumbotron-content h6{
+	line-height: 1.8em;
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+.class_we_agree_content{
+	font-size: 18px;
+	color: #1a4069;
+	word-spacing: 0.1em;	
+	line-height: 1.8em;
+	font-weight: 500;
+	padding-top: 3%;
+}
+
+.class_we_are_diff{
+	font-size: 18px;
+	font-weight: bold;
+	word-spacing: 0.1em;
+	color: #1a4069
+}
+
+
+
+.class_cards{
+	/*width: 220px;*/
+	border: solid 1px #DFDFDF;
+	text-align: center;
+	height: 220px;
+	box-shadow: 1px 1px 6px -1px #DFDFDF;
+}
+
+.class_card_text{
+	font-size: 14px;
+	font-weight: bold;
+	color: #1a4069;
+	text-align: center;
+	padding-bottom: 30px;
+	height: 30%;
+}
+
+.class_card_image{
+	text-align: center;
+	margin: 0 auto;
+	height: 70%;
+	padding-top: 50px;
+}
+
+.class_card_image img{
+	width: 70px;
+	height: 75px;
+	display: inline-block;
+}
+
+
+
+.class_interest_know_more{
+	text-align: center;
+	padding-top: 2%;
+}
+
+#id_interest_headline{
+	font-size: 18px;
+	font-weight: bolder;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#id_interest_body{
+	font-size: 12px;
+	font-weight: thin;
+	color: #9f9f9f;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.class_jumbotron_contact{
+	border-radius: 0;
+	margin-bottom: 0;
+	background-color: #F5F5F5;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.class_contact_block{
+	/*height: 80px;*/
+}
+
+.class_contact_block_image{
+	text-align: center;
+	height: 40px;
+}
+
+.class_contact_block_image img{
+	height: 50px;
+	width: 35px;
+}
+
+.class_contact_block_text{
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	padding-top: 20px;
+}
