@@ -9,9 +9,9 @@
     color: white;
     
 }
-.class_full_h {
-	
-	
+.gray-toggle {
+	filter: grayscale(100%);
+	opacity: 0.7;
 
 }
 .jumbostyle {

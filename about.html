@@ -30,13 +30,59 @@ rashi, manoj, sakshi-->
       font-family: 'Fira Sans', sans-serif;
     }
   </style>
+ 
+  
 </head>
 <body>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
-    
+     <script type="text/javascript">
+     	$(document).ready(function() {
+     	var achievement_point = $('#achievement_begin').offset().top;
+    	
+    		$(window).scroll(function() {
+    			
+    			if($(this).scrollTop() > achievement_point) {
+    				$('.counter').each(function() {
+		  			var $this = $(this),
+		      		countTo = $this.attr('data-count');
+		  
+		  			$({ countNum: $this.text()}).animate({
+		    			countNum: countTo
+		  			},
+
+		  			{
+
+		    			duration: 2000,
+		    			easing:'linear',
+		    			step: function() {
+		      				$this.text(Math.floor(this.countNum));
+		    			},
+		    			complete: function() {
+		      			$this.text(this.countNum);
+		      //alert('finished');
+		    			}
+
+		  			});  
+		  		});
+		  	}
+	    });
+  		$('.card').hover(
+  			function() {
+  				$(this).children('.card-img-top').animate({opacity : '1'});
+  				$(this).children('.card-img-top').removeClass('gray-toggle');
+  			},
+  			function() {
+  				$(this).children('.card-img-top').animate({opacity: '0.7'});	
+  				$(this).children('.card-img-top').addClass('gray-toggle');
+  			}
+  		);
+  		
+		
+    });
+    </script>
     
     <nav id="id_nav_handler" class="navbar navbar-expand-md class_navbar_custom2 sticky-top">
 
@@ -160,7 +206,7 @@ rashi, manoj, sakshi-->
 		    	</div>
 		    	<div class="col-xs-12 col-sm-6 col-lg">
 		    		<div class="card">
-					  <img class="card-img-top" height="240" src="assets/Prashant2.jpeg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Prashant2.jpeg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Prashant Chaudhary</b></p>
 					  	<p style="color:#9f9f9f;"> MD & CEO </p>
@@ -183,7 +229,7 @@ rashi, manoj, sakshi-->
 		    	<div class="col-xs-12 col-sm-6 col-lg">
 		    		<div class="card">
 
-					  <img class="card-img-top" height="240" src="assets/Sarvjeet.jpg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Sarvjeet.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	 <p class="card-title"><b>Sarvjeet Singh Midha</b></p>
 					  	 <p style="color:#9f9f9f;"> COO </p> 
@@ -207,7 +253,7 @@ rashi, manoj, sakshi-->
 		    	<div class="col-xs-12 col-sm-6 col-lg">
 		    		<div class="card">
 
-					  <img class="card-img-top" height="240" src="assets/Siddarth.jpg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Siddarth.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Siddarth Puri</b></p>	
 					  	<p style="color:#9f9f9f;"> Head - Global Search </p>
@@ -239,7 +285,7 @@ rashi, manoj, sakshi-->
 		    	</div>
 		    	<!--div class="col-md">
 		    		<div class="card">
-					  <img class="card-img-top" height="240" src="assets/Bhavya Bhardwaj.jpg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Bhavya Bhardwaj.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Bhavya Bhardwaj</b></p>
 					  	<p style="color:#9f9f9f;"> Team Lead </p>
@@ -262,7 +308,7 @@ rashi, manoj, sakshi-->
 		    	
 		    	<!--div class="col-md">
 		    		<div class="card">
-					  <img class="card-img-top" height="240" src="assets/Divya Sharma.JPG" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Divya Sharma.JPG" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	 <p class="card-title"><b>Divya Sharma</b></p>
 					  	 <p style="color:#9f9f9f;"> Team Lead </p> 
@@ -284,7 +330,7 @@ rashi, manoj, sakshi-->
 		    	</div-->
 		    	<div class="col-xs-12 col-sm-6 col-lg">
 		    		<div class="card">
-					  <img class="card-img-top" height="240" src="assets/Kamal.jpg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Kamal.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Kamal Mehta</b></p>
 					  	<p style="color:#9f9f9f;"> Cluster Head BFSI </p>
@@ -309,7 +355,7 @@ rashi, manoj, sakshi-->
 		    	<div class="col-xs-12 col-sm-6 col-lg">
 		    		<div class="card">
 
-					  <img class="card-img-top" height="240" src="assets/Dipankar.jpg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Dipankar.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Dipankar Dutt</b></p>
 					  	<p style="color:#9f9f9f;">Client Relations </p> 
@@ -360,7 +406,7 @@ rashi, manoj, sakshi-->
 		    	<div class="col-xs-12 col-sm-6 col-lg">
 		    		<div class="card">
 
-					  <img class="card-img-top" height="280" src="assets/Rashi Chaudhary.jpg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="280" src="assets/Rashi Chaudhary.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Rashi Chaudhary</b></p>	
 					  	<p style="color:#9f9f9f;"> Team Lead International </p>
@@ -382,7 +428,7 @@ rashi, manoj, sakshi-->
 		    	</div>
 		    	<!--div class="col-md">
 		    		<div class="card">
-					  <img class="card-img-top" height="240" src="assets/Vishal.jpg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Vishal.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Vishal Nagpal</b></p>
 					  	<p style="color:#9f9f9f;"> Team Lead </p>
@@ -405,7 +451,7 @@ rashi, manoj, sakshi-->
 		    	<div class="col-md">
 		    		<div class="card">
 
-					  <img class="card-img-top" height="240" src="assets/Sonia.png" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Sonia.png" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	 <p class="card-title"><b>Sonia Narula</b></p>
 					  	 <p style="color:#9f9f9f;"> Team Lead </p> 
@@ -428,7 +474,7 @@ rashi, manoj, sakshi-->
 		    	<div class="col-xs-12 col-sm-6 col-lg">
 		    		<div class="card">
 
-					  <img class="card-img-top" height="280" src="assets/Manoj.png" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="280" src="assets/Manoj.png" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Manoj Kumar</b></p>	
 					  	<p style="color:#9f9f9f;"> Vertical Head </p>
@@ -450,7 +496,7 @@ rashi, manoj, sakshi-->
 		    	</div>
 		    	<div class="col-xs-12 col-sm-6 col-lg">
 		    		<div class="card">
-					  <img class="card-img-top" height="280" src="assets/Sakshi Makkar.jpeg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="280" src="assets/Sakshi Makkar.jpeg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Sakshi Makkar</b></p>
 					  	<p style="color:#9f9f9f;"> Head - Oil and Gas </p>
@@ -481,7 +527,7 @@ rashi, manoj, sakshi-->
 		    	</div>
 		    	<div class="col-md">
 		    		<div class="card">
-					  <img class="card-img-top" height="240" src="assets/Monika.jpg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Monika.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Monika Kukreja</b></p>
 					  	<p style="color:#9f9f9f;"> Vertical Head </p>
@@ -505,7 +551,7 @@ rashi, manoj, sakshi-->
 		    	<div class="col-md">
 		    		<div class="card">
 
-					  <img class="card-img-top" height="240" src="assets/Rahul.jpg" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Rahul.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	 <p class="card-title"><b>Rahul Sharma</b></p>
 					  	 <p style="color:#9f9f9f;"> BFSI Vertical Head  </p> 
@@ -528,7 +574,7 @@ rashi, manoj, sakshi-->
 		    	<div class="col-md">
 		    		<div class="card">
 
-					  <img class="card-img-top" height="240" src="assets/Meenakshi.png" alt="Card image cap">
+					  <img class="card-img-top gray-toggle" height="240" src="assets/Meenakshi.png" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title"><b>Meenakshi Chopra</b></p>	
 					  	<p style="color:#9f9f9f;">  BFSI Vertical Head </p>
@@ -564,9 +610,11 @@ rashi, manoj, sakshi-->
 		    	</div>
 		    </div-->
 		</div>
+		<div id="achievement_begin"></div>
 		<br><br>
     	
     </section>
+    
     <div id = "achievements" class="jumbotron jumbotron-fluid jumbostyle2">
     		<div class="container">
     			<div class="row">
@@ -604,7 +652,7 @@ rashi, manoj, sakshi-->
     					<table style="display: inline-block;">
     						<tr>
     							<td>
-    								<p class="class_stat">158
+    								<p class="class_stat"><span class="counter" data-count="158">0</span>
     								<hr style="width:15px; background-color: #FFD700; margin-left: 0;">
     								<p style="font-size:14px; color: #787878;">Clients</p></p>
     							</td>
@@ -613,7 +661,7 @@ rashi, manoj, sakshi-->
     							</td>
     							<td>
     								<p class="class_stat">
-    									60k
+    									<span class="counter" data-count="60">0</span>k
     									<hr style="width:15px; background-color: #FFD700; margin-left: 0;">
     									<p style="font-size:14px; color: #787878;">Placed</p>
     								</p>
@@ -624,7 +672,7 @@ rashi, manoj, sakshi-->
     						</tr>
     						<tr>
     							<td>
-    								<p class="class_stat">7
+    								<p class="class_stat"><span class="counter" data-count="7">0</span>
     								<hr style="width:15px; background-color: #FFD700; margin-left: 0;">
     								<p style="font-size:14px; color: #787878;">Countries</p></p>
     							</td>
@@ -632,7 +680,7 @@ rashi, manoj, sakshi-->
     								<p style="padding-left: 80px;"></p>
     							</td>
     							<td>
-    								<p class="class_stat">1M
+    								<p class="class_stat"><span class="counter" data-count="1">0</span>M
     								<hr style="width:15px; background-color: #FFD700; margin-left: 0;">
     								<p style="font-size:14px; color: #787878;">Applications</p></p>
     							</td>
@@ -712,12 +760,12 @@ rashi, manoj, sakshi-->
 						</div>
 	    			</div>
 	    		</div>
-	    		<div class="col-md-1"></div>
+	    		<div class="col-md-1 my-auto"><img class="img-fluid" src="assets/next.png"></div>
 	    	</div>
     	</div>
     	<br>
     </section>
-    
+    <div class="ml-2" style="font-size: 10px;">Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 	
 
 		<!-- Footer section -->
