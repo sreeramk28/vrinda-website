@@ -1,13 +1,16 @@
 .class_topic_header {
-	background-color: #112238; 
-	background-image: url('../assets/headerbckg.jpg'); 
-	background-blend-mode: overlay;
+	/*background-color: #112238; this color is overlayed with background*/
+	background-image: url('../assets/blue.jpg');/*opening image background*/ 
+	/*background-blend-mode: overlay;*/
 	background-position: center; /* Center the image */
   	background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     opacity: 0.9;
     color: white;
     
+}
+hr {
+	margin-bottom: 5px;
 }
 .gray-toggle {
 	filter: grayscale(100%);
@@ -22,7 +25,8 @@
 	margin-top: 0;
 }
 .jumbostyle2 {
-	background-color: #f2f2f2;
+	/*background-color: #f2f2f2;*/
+	background-color: #165E9E;
 }
 .card {
 	padding: 15px 15px 0 15px;
@@ -36,7 +40,30 @@
 }
 .class_stat {
 	font-weight: 700;
-	font-size: 20px;
-	color: #1a4069;
+	font-size: 25px;
+	/*color: #1a4069;*/
+	color: #fff;
 	line-height: 0.2rem;
+}
+.class_about_headingA {
+	border-left: 3px solid #FFF;
+	padding-left: 1rem;
+	margin-left: 0;
+}
+.class_heading_content1A {
+	color: #fff;
+	/*color: #fff;*/
+}
+.class_heading_content2A {
+	font-weight: 700;
+	color: #FFF;
+}
+.class_about_descriptionA {
+	padding-left: 1rem;
+	color: #fff;
+	/*color: #fff;*/
+	font-size: 0.8rem;
+}
+.profiles_overall_bgc {
+	background-color: #f2f2f2;
 }

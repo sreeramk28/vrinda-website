@@ -224,3 +224,6 @@
   border-radius: 2px;
   cursor: pointer;
 }
+.fborder {
+	border: solid #165e9e;
+}

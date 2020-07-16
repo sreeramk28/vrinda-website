@@ -11,13 +11,16 @@
 }
 .class_heading_content1 {
 	color: #9f9f9f;
+	/*color: #fff;*/
 }
 .class_heading_content2 {
 	font-weight: 700;
+	
 }
 .class_about_description {
 	padding-left: 1rem;
 	color: #9f9f9f;
+	/*color: #fff;*/
 	font-size: 0.8rem;
 }
 
@@ -44,7 +47,7 @@ div > .class_col_padding {
 	font-weight: 700;
 }
 .checker {
-
+	background-color: ;
 }
 
 @media (min-width: 768px) {
