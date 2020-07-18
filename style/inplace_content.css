@@ -91,8 +91,8 @@ div > .class_col_padding {
 }
 .class_downloadnow_button {
 	background-color: #f9a81a;
-	color: #165e9e;
-	border: 1px solid #165e9e;
+	color: #fff;
+	border: 1px solid #f9a81a;
 	border-radius: 0px;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;

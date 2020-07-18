@@ -19,6 +19,9 @@ $(document).ready(function() {
       document.getElementById("id_carousel_heading").innerHTML = "Executive Search";
       document.getElementById("id_carousel_description").innerHTML = 
       "An innovative way to discover key individuals<br> who are not visible within the marketplace<br> and not actively looking for a career change.";
+      // $('#id_carousel_jumbo').fadeOut(1000, function() {
+      //   $(this).css("background", "url('assets/01.jpg') no-repeat center bottom/cover").fadeIn(1000);
+      // });
       jumbo.style.background = "url('assets/01.jpg') no-repeat center bottom/cover";
     }
     function show2(){
@@ -33,7 +36,9 @@ $(document).ready(function() {
       document.getElementById("id_carousel_heading").innerHTML = "International Recruitment";
       document.getElementById("id_carousel_description").innerHTML = 
       "The technological revolutions & globalization provides<br> a great opportunity for talented workforce to scout for<br> overseas opportunities.";
-      
+      // $('#id_carousel_jumbo').fadeOut(1000, function() {
+      //   $(this).css("background", "url('assets/02.jpg') no-repeat center bottom/cover").fadeIn(1000);
+      // });
       jumbo.style.background = "url('assets/02.jpg') no-repeat center bottom/cover";
       
     }
@@ -49,6 +54,9 @@ $(document).ready(function() {
       document.getElementById("id_carousel_heading").innerHTML = "Permanent Recruitment";
       document.getElementById("id_carousel_description").innerHTML = 
       "With strong database and expertise in key<br> business verticals, we deliver the best talent<br> in the shortest time possible.";
+      // $('#id_carousel_jumbo').fadeOut(1000, function() {
+      //   $(this).css("background", "url('assets/03.jpg') no-repeat center bottom/cover").fadeIn(1000);
+      // });
       jumbo.style.background = "url('assets/03.jpg') no-repeat center bottom/cover"; 
     }
      function show4(){
@@ -63,7 +71,9 @@ $(document).ready(function() {
       document.getElementById("id_carousel_description").innerHTML = 
       "With trained personnel & technology, we help your<br> business with a cost-effective staffing solutions<br> which strengthens efficiency, productivity across<br> skill sets.";
       jumbo.style.background = "url('assets/04.jpg') no-repeat center bottom/cover";
-      
+      // $('#id_carousel_jumbo').fadeOut(1000, function() {
+      //   $(this).css("background", "url('assets/04.jpg') no-repeat center bottom/cover").fadeIn(1000);
+      // });
     }
      function show5(){
       // alert("Hi");
@@ -79,6 +89,9 @@ $(document).ready(function() {
       //alert(document.getElementById("id_carousel_heading").innerHTML);
       document.getElementById("id_carousel_description").innerHTML = 
       "With deep expertise, world class resources, and<br> a focus on innovation, we can help you tackle even<br> the most complex and challenging talent needs.";
+      // $('#id_carousel_jumbo').fadeOut(1000, function() {
+      //   $(this).css("background", "url('assets/05.jpg') no-repeat center bottom/cover").fadeIn(1000);
+      // });
       jumbo.style.background = "url('assets/05.jpg') no-repeat center bottom/cover";
     }
     

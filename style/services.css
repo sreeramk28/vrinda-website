@@ -185,3 +185,6 @@ td {
 a:hover {
 	text-decoration: none;
 }
+h6 {
+	line-height: 1.5em;
+}
