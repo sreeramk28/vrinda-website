@@ -1,6 +1,6 @@
 .class_topic_header {
 	/*background-color: #112238; this color is overlayed with background*/
-	background-image: url('../assets/blue.jpg');/*opening image background*/ 
+	background-image: url('../assets/abtbanner.jpeg');/*opening image background*/ 
 	/*background-blend-mode: overlay;*/
 	background-position: center; /* Center the image */
   	background-repeat: no-repeat; /* Do not repeat the image */
@@ -8,6 +8,9 @@
     opacity: 0.9;
     color: white;
     
+}
+.icon-border {
+	border-right: 1px solid #d3d3d3;
 }
 hr {
 	margin-bottom: 5px;
@@ -29,10 +32,16 @@ hr {
 	background-color: #165E9E;
 }
 .card {
-	padding: 15px 15px 0 15px;
+	/*padding: 15px 15px 0 15px;*/
+	padding: 20px;
+	border: 0;
 	border-radius: 0;
-	box-shadow: 0px 1px #9f9f9f;
+	box-shadow: 2px 2px 3px -1px #e8eAeA;
 }
+.card-border {
+	border: 1px solid #f2f2f2;
+	box-shadow: 0px 0px;
+} 
 .card-body {
 	line-height: 1.3rem;
 	padding-left: 0;
@@ -62,8 +71,21 @@ hr {
 	padding-left: 1rem;
 	color: #fff;
 	/*color: #fff;*/
-	font-size: 0.8rem;
+	font-size: 14px;
 }
 .profiles_overall_bgc {
-	background-color: #f2f2f2;
+	background-color: #f1f2f2;
+}
+.designation {
+	color:#9f9f9f; 
+	font-size: 14px;
+
+}
+.title-margin {
+	margin-bottom: 1px;
+}
+.profile-description {
+	color:#9f9f9f; 
+	font-size: 13px; 
+	padding-bottom: 10px; 
 }

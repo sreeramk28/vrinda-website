@@ -1,13 +1,50 @@
-.class_jumbotron_first{
-	height: 80vh;
+.class_jumbotron_1{
+	height: 291px;
 	border-radius: 0;
-	background-image: url("../assets/HPInternationalRecruitmentHome.png");
-	text-align: center;
+	background-image: url("../assets/s1.jpeg");
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.class_jumbotron_2{
+	height: 291px;
+	border-radius: 0;
+	background-image: url("../assets/s2.jpeg");
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.class_jumbotron_3{
+	height: 291px;
+	border-radius: 0;
+	background-image: url("../assets/s3.jpeg");
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.class_jumbotron_4{
+	height: 291px;
+	border-radius: 0;
+	background-image: url("../assets/s4.jpeg");
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.class_jumbotron_5{
+	height: 291px;
+	border-radius: 0;
+	background-image: url("../assets/s5.jpeg");
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+ul > li {
+	font-size: 13px;
 }
 
 .jumbotron-content{
 	margin: auto;
-	padding-top: 150px;
+	padding-top: 50px;
 	color: #fff;
 }
 
@@ -19,7 +56,7 @@
 
 .class_we_agree_content{
 	font-size: 18px;
-	color: #1a4069;
+	color: #165e9e;
 	word-spacing: 0.1em;	
 	line-height: 1.8em;
 	font-weight: 500;
@@ -30,45 +67,71 @@
 	font-size: 18px;
 	font-weight: bold;
 	word-spacing: 0.1em;
-	color: #1a4069
+	color: #165e9e
 }
-
-
-
+.class_know_more_full {
+	background-color: #165e9e;
+	color: #fff;
+}
+.mbt {
+	margin-bottom: 3px;
+}
+.button-style-1 {
+	width: 35px;
+	height: 35px;
+	background-color: #165e9e;
+	border: 0;
+	
+}
+.button-style-2 {
+	
+	background-color: #165e9e;
+	color: #fff;
+	border: 0;
+	
+}
+td {
+	padding: 0;
+	margin: 0;
+}
 .class_cards{
 	/*width: 220px;*/
 	border: solid 1px #DFDFDF;
+	background-color: #fff;
 	text-align: center;
-	height: 220px;
+	height: 160px;
 	box-shadow: 1px 1px 6px -1px #DFDFDF;
 }
 
 .class_card_text{
 	font-size: 14px;
 	font-weight: bold;
-	color: #1a4069;
+	
 	text-align: center;
-	padding-bottom: 30px;
+	color: #165e9e;
+	text-align: center;
+	padding-bottom: 20px;
 	height: 30%;
+	padding-top: 20px;
 }
 
 .class_card_image{
 	text-align: center;
 	margin: 0 auto;
-	height: 70%;
-	padding-top: 50px;
+	height: 45%;
+	padding-top: 20px;
 }
 
 .class_card_image img{
-	width: 70px;
-	height: 75px;
+	width: 50px;
+	height: 50px;
 	display: inline-block;
 }
 
 
 
 .class_interest_know_more{
-	text-align: center;
+	/*text-align: center;*/
 	padding-top: 2%;
 }
 
@@ -80,9 +143,9 @@
 }
 
 #id_interest_body{
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: thin;
-	color: #9f9f9f;
+	
 	padding-top: 0;
 	margin-top: 0;
 }
@@ -114,4 +177,11 @@
 	font-size: 14px;
 	font-weight: 600;
 	padding-top: 20px;
+}
+.cols-color1 {
+	padding: 10px;
+	
+}
+a:hover {
+	text-decoration: none;
 }
