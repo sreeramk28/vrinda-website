@@ -85,13 +85,13 @@ ul > li {
 }
 .button-style-2 {
 	
-	background-color: #165e9e;
-	color: #fff;
+	background-color: #fff;
+	color: #165e9e;
 	border: 0;
-	
+	border-radius: 10px;
 }
 td {
-	padding: 0;
+	
 	margin: 0;
 }
 .class_cards{
