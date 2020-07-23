@@ -203,7 +203,7 @@ $(document).ready(function() {
     }
     function smallScreenBoom() {
         //$(".id_industry_insights").css("background-position", "cover");
-        $("#id_carousel_tabs").hide();
+          $("#id_carousel_tabs").hide();
           $(".class_navbar_custom1").hide();
           
           if($("#id_nav_handler3").length) {
@@ -259,7 +259,19 @@ $(document).ready(function() {
           $(".class_col_padding > span").css({"padding-left": "0"});
     }
     var wi = $(window).width();
-      if (wi >= 768) {
+      if (wi <= 425) {
+          
+          smallScreenBoom();
+          //doInsert();
+          //jumbo.style.background = "#000";
+          //$("#id_carousel_heading").hide();
+          //$("#id_carousel_description").hide();
+      }
+      else if(wi > 425 && wi < 768) {
+        smallScreenBoom();
+        $(".class_carousel_general").css("height", "310px");
+      }
+      else if (wi >= 768) {
         $(".class_navbar_custom3").remove();
         $("#id_carousel_tabs").show();
         $("#mobile_content").hide();
@@ -270,29 +282,33 @@ $(document).ready(function() {
         //$(".class_about_box").Class("col");
         //$(".class_about_space").removeClass("col-md-1");
       }
-      if (wi < 768) {
+      
+      
+      
+    $(window).resize(function(){
+        var w = $(window).width();
+        if (w <= 425) {
           
           smallScreenBoom();
           //doInsert();
           //jumbo.style.background = "#000";
           //$("#id_carousel_heading").hide();
           //$("#id_carousel_description").hide();
-      }
-      
-    $(window).resize(function(){
-        var w = $(window).width();
-        if (w >= 768) {
+        }
+        else if(w > 425 && w < 768) {
+          smallScreenBoom();
+          $(".class_carousel_general").css("height", "310px");
+        }
+        
+        else if (w >= 768) {
           $(".class_navbar_custom3").remove();
           bigScreenBoom();
           scrollerControl();
           //$("#id_carousel_heading").show();
           //$("#id_carousel_description").show();
         }
-        if (w < 768) {
-          //alert(w);
-          smallScreenBoom();
-          
-        }
+        
+        
     });
 
       

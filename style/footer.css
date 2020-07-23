@@ -5,6 +5,7 @@
 	padding-top: 0;
 	color: #fff;
 	font-size: 12px;
+	padding-bottom: 3rem;
 }
 
 .class_footer_jumbo a{
@@ -120,7 +121,7 @@
 
 .class_footer_latest_updates > div{
 	padding: 0;
-	margin-bottom: 8%;
+	margin-bottom: 5%;
 }
 .class_footer_latest_updates  p{
 	text-align: left;
