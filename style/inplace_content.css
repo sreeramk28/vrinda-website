@@ -133,6 +133,15 @@ margin-right: 1rem;*/
 	width: 360px;
   }
 }
+#reach_wrap {
+	margin-bottom: 20px;
+}
+#clients_content_wrap {
+	margin-bottom: 20px;
+}
+#about_wrap {
+	margin-bottom: 20px;
+}
 .class_jumbo_class_row_relative{
 	/*border: 1px solid;*/
 	background-color: #f5f5f5;
