@@ -31,7 +31,55 @@
 
 
     <!--++++++++++++++++++++++++ Navigation bar section--the white +++++++++++++++++++++++++++-->
-
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var w = $(window).width();
+        if(w < 768) {
+          var p = $("#map_wrap");
+          $("#reach_wrap").after(p);
+        }
+        else {
+          var p = $("#map_wrap");
+          $("#reach_wrap").before(p);
+        }
+        $(window).resize(function() {
+          var w = $(window).width();
+          if(w < 768) {
+            var p = $("#map_wrap");
+            $("#reach_wrap").after(p);
+          }
+          else {
+            var p = $("#map_wrap");
+            $("#reach_wrap").before(p);
+          }
+        });
+        $(".class_footer_icon_image_social_media_L").hover(function(){
+          $(this).css("background-color", "#0077B5");
+          }, function(){
+          $(this).css("background-color", "#252525");
+        });
+        $(".class_footer_icon_image_social_media_T").hover(function(){
+          $(this).css("background-color", "#1DA1F2");
+          }, function(){
+          $(this).css("background-color", "#252525");
+        });
+        $(".class_footer_icon_image_social_media_F").hover(function(){
+          $(this).css("background-color", "#3B5998");
+          }, function(){
+          $(this).css("background-color", "#252525");
+        });
+        $(".class_footer_icon_image_social_media_W").hover(function(){
+          $(this).css("background-color", "#25D366");
+          }, function(){
+          $(this).css("background-color", "#252525");
+        });
+      });
+      
+      
+  
+      
+      
+    </script>
     <nav id="id_nav_handler" class="navbar navbar-expand-md class_navbar_custom2 fixed-top">
 
           <div class="container class_navbar_handler_container">
@@ -181,7 +229,7 @@
     <div style="position: absolute; left: 0; right: 0;"class="class_carou_content container">
         <div class="row">
           <!--div class="col-md-1"></div-->
-          <div class="col-md-10" style="margin-left: 80px;">
+          <div class="col-md-10 mlr-80">
           	  <p style="display: none;" class="class_slide_num">1</p>
               <p class="text-left" id="id_carousel_heading">Executive Search</p>
               <p id="id_carousel_description">An innovative way to discover key individuals who are<br> not visible within the marketplace and not actively<br> looking for a career change.</p>
@@ -240,7 +288,7 @@
   </div>
   
   <div id="mobile_content" style="margin-bottom: 2rem;">
-    	<div class="text-center mx-2">
+    	<div class="text-center" style="margin-left: 80px; margin-right: 80px;">
     		<p class="slide_num" style="display: none;">1</p>
     		<div class="carousel_mob_heading">Executive Search</div>
     		<p class="carousel_mob_description">An innovative way to discover key individuals who are not visible within the marketplace and not actively looking for a career change.</p>
@@ -387,9 +435,9 @@
       <div class="row">
         <div class="col-md-1">
         </div>
-        <div class="col-md-6">
+        <div id="map_wrap" class="col-md-6">
           <div style="padding-left: 10px; padding-right: 2.5rem;">
-            <img style="width: auto; height: auto;" id = "id_thewmap" src="assets/Map.png" usemap="#worldmap">
+            <img id = "id_thewmap" src="assets/Map.png" usemap="#worldmap">
             <map name="worldmap">
               <area shape="rect" coords="30,120,150,180" href="#!">
               <area shape="rect" coords="310,120,360,210" href="#!">
@@ -399,9 +447,9 @@
             </map>
           </div>
         </div>
-        <div class="my-auto col-md-4">
+        <div id="reach_wrap" class="my-auto col-md-4">
           <br>
-          <div style="margin-left: 50px;" class="class_about_heading">
+          <div class="class_about_heading">
             <p class="my-auto class_heading_content1">
               GLOBAL REACH
             </p>
@@ -409,14 +457,14 @@
               6 offices across 4 continents
             </p>
           </div>
-          <div style="margin-left: 50px;" class="class_about_description">
+          <div class="class_about_description">
             <p class="class_descript_content">
               Our offices in London, California, Dubai, Auckland, New Delhi & Gurgaon are independent units lead by our regional
               directors, supported by highly talented back-office team in
               India.
             </p>
           </div>
-          <div style="margin-left: 50px;" class="class_knowmore_wrap">
+          <div class="class_knowmore_wrap">
             <button class="class_knowmore_button" name="knowmore">
               <a href="contact.html" target="_blank" style="color: #fff; text-decoration: none;">Know More</a>
               <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -476,7 +524,7 @@
           <div class="col-md-1"></div>
           <div class="col-md-6">
             <div class="class_client_grid">
-              <table>
+              <!--table>
               	<tr>
               		<td><img class="img-fluid" src="assets/cl (1).png"></td>
               		<td><img class="img-fluid" src="assets/cl (25).png"></td>
@@ -506,7 +554,8 @@
               		<td><img class="img-fluid" src="assets/cl (30).png"></td>
               	</tr>
               		
-             </table>
+             </table-->
+             <img id="id_logo_grid" src="assets/LOGO.jpg"><br><br>
             </div>
           </div>
           
@@ -586,7 +635,7 @@
       <!-- <hr class="clearfix w-100 d-md-none"> -->
             <div class="col-md-5" >
               <div class="row class_footer_right_half_row" >
-                <div class="col class_footer_get_in_touch" >
+                <div class="col-6 col-sm class_footer_get_in_touch" >
                   <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Get in Touch</p>
                   <ul class="list-unstyled">
                     <li>
@@ -618,7 +667,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col class_footer_site_map">
+                <div class="col-6 col-sm class_footer_site_map">
                   <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Site Map</p>
 
                     <ul class="list-unstyled">
@@ -640,17 +689,7 @@
                       </li>
                     </ul>
                 </div>
-
-                
-
-
-              </div>
-            </div>
-            <div class="col-md-1"></div>
-    </div>
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col mx-auto class_footer_latest_updates">
+                <div class="col-6 col-sm mx-auto class_footer_latest_updates">
                   <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Latest Updates</p>
                   <div>
                     
@@ -662,7 +701,17 @@
                     <p><span>Gender Diversity</span></p>
                     <p>Effects, insights on gender diversity in the workforce</p>
                   </div>
-      </div>
+                </div>
+                
+
+
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      
       <div class="col-md-1"></div>
 
     </div>
@@ -711,8 +760,31 @@
   	</p>
   <button class="close">&times;</button>
 </div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var wi = $(window).width();
+    if(wi < 576) {
+      $(".class_footer_latest_updates").removeClass("mx-auto");
+    }
+    else {
+        
+      $(".class_footer_latest_updates").addClass("mx-auto");
+        
+    }
+    $(window).resize(function() {
+      var wi = $(window).width();
+      if(wi < 576) {
+        $(".class_footer_latest_updates").removeClass("mx-auto");
+      }
+      else {
+        
+        $(".class_footer_latest_updates").addClass("mx-auto");
+        
+      }
+    }); 
 
-
+  });
+</script>
 
 </body>
 </html>

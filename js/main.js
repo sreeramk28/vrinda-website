@@ -77,7 +77,7 @@ $(document).ready(function() {
       $(".class_slide_num").html("3"); $(".slide_num").html("3");
       document.getElementById("id_carousel_heading").innerHTML = "Permanent Recruitment";
       document.getElementById("id_carousel_description").innerHTML = 
-      "With strong database and expertise in key<br> business verticals, we deliver the best talent<br> in the shortest time possible.";
+      "With strong database and expertise in key<br> business verticals, we deliver the best<br> talent in the shortest time possible.";
       // $('#id_carousel_jumbo').fadeOut(1000, function() {
       //   $(this).css("background", "url('assets/03.jpg') no-repeat center bottom/cover").fadeIn(1000);
       // });
@@ -98,7 +98,7 @@ $(document).ready(function() {
       $(".class_slide_num").html("4");$(".slide_num").html("4");
       document.getElementById("id_carousel_heading").innerHTML = "Staffing Solutions";
       document.getElementById("id_carousel_description").innerHTML = 
-      "With trained personnel & technology, we help your<br> business with a cost-effective staffing solutions<br> which strengthens efficiency, productivity across<br> skill sets.";
+      "With trained personnel & technology, we help your<br> business with a cost-effective staffing solutions<br> which strengthens efficiency, productivity<br> across skill sets.";
       jumbo.style.background = "url('assets/04.jpg') no-repeat center bottom/" + background_size;
       // $('#id_carousel_jumbo').fadeOut(1000, function() {
       //   $(this).css("background", "url('assets/04.jpg') no-repeat center bottom/cover").fadeIn(1000);
