@@ -9,6 +9,7 @@ $(document).ready(function() {
 		person-name
 		person-email
 	*/
+	var sec_ids = ["inter_rec", "perm_rec", "staffing", "recpo"];
 	var bheads = ["International<br> Recruitment", "Permanent<br> Recruitment", "Staffing Solutions", "Recruitment<br> Process<br> Outsourcing"];
 	var bimgs = ["assets/s2.jpeg", "assets/s3.jpeg", "assets/s4.jpeg", "assets/s5.jpeg"];
 	var pnames = ["Siddarth Puri", "Dipankar Dutt", "Sarvjeet Singh Midha", "Siddarth Puri"];
@@ -28,8 +29,10 @@ $(document).ready(function() {
 	"Asset 3Vrinda Services.jpg", "Asset 11Vrinda Services.jpg"];
 	
 	for(var i = 0; i < 4; i++) {
+
 		var p = $(".service-section").last().clone();
 		$(".service-section").last().after(p);
+		$(".service-section .section-link").last().attr("id", sec_ids[i]);
 		$(".service-section .banner-image").last().attr("src", bimgs[i]);
 		$(".service-section .banner-head").last().html(bheads[i]);
 		$(".service-section .person-name").last().html(pnames[i]);
