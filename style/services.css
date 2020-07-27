@@ -131,18 +131,12 @@ td {
 	display: inline-block;
 }
 
-
-
-.class_interest_know_more{
-	/*text-align: center;*/
-	padding-top: 2%;
-}
-
 .class_interest_headline{
 	font-size: 18px;
-	font-weight: bolder;
+	font-weight: 700;
 	padding-bottom: 0;
-	margin-bottom: 0;
+	margin-top: 22px;
+	margin-bottom: 16px;
 }
 
 #id_interest_body{
@@ -196,55 +190,32 @@ h6 {
 	outline: none;
 }
 @media screen and (max-width: 660px) {
-	.banner-head {
-		position: absolute; 
-		left: 0; 
-		top: 50%; 
-		transform: translate(50%, -50%);
-	}
-	.bh-styling {
-		color: #fff;
-		font-size: 15px;
-		font-weight: 700;
-	}
+	
 }
 @media screen and (max-width: 768px) {
-	.bd-styling {
-		font-size: 14px;
-	}
+	
 }
 @media screen and (min-width: 661px) and (max-width: 1024px) {
-	.banner-head {
-		position: absolute; 
-		left: 30px; 
-		top: 50%; 
-		transform: translate(50%, -50%);
-	}
-	.bh-styling {
-		font-size: 20px;
-		font-weight: 700;
-		color: #fff;
-	}
+	
 }
 
 @media screen and (min-width: 1025px) {
-	.banner-head {
-		position: absolute; 
-		left: 100px; 
-		top: 50%; 
-		transform: translate(50%, -50%);
-	}
-	.bh-styling {
-		font-size: 30px;
-		font-weight: 700;
-		color: #fff;
-	}
+
 }
 
-
+.bd-styling {
+	font-size: 16px;
+}
+.bh-styling {
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+}
 
 .buttonDownload {
-	margin-top: 10px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	margin-left: 50px;
 	display: inline-block;
 	position: relative;
 	padding: 10px 25px;
@@ -252,15 +223,15 @@ h6 {
 	background-color: #fff;
 	color: #165e9e;
   
-	font-family: sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 	text-decoration: none;
-	font-size: 0.9em;
+	font-size: 13px;
 	text-align: center;
 	text-indent: 15px;
 }
 
 .buttonDownload:hover {
-	background-color: #165e9e;
+	background-color: #F9A81A;
 	color: white;
 }
 
@@ -274,8 +245,8 @@ h6 {
 
 /* Download box shape  */
 .buttonDownload:before {
-	width: 10px;
-	height: 2px;
+	width: 15px;
+	height: 5px;
 	border-style: solid;
 	border-width: 0 2px 2px;
 }
@@ -325,5 +296,14 @@ h6 {
 	100% {
 		margin-top: 0;
 		opacity: 0;
+	}
+}
+.ctable-center {
+	margin: 0 auto;
+	text-align: left;
+}
+@media screen and (min-width: 992px) {
+	.ctable {
+		margin-top: 4px;
 	}
 }

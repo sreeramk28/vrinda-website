@@ -20,47 +20,66 @@ $(document).ready(function() {
           $(".class_col_padding > span").css({"padding-left": "15px"});
 	}
 	var w = $(window).width();
+	if(w < 1200) {
+		$(".buttonDownload").css("margin-left", "0");	
+	}
+	else {
+		$(".buttonDownload").css("margin-left", "50px");	
+	}
 	if(w < 992) {
-		$(".ctable").css("margin-left", "0");
-		$(".ctable").css("margin-top", "0");
-		//$(".vertical-line").hide();
+		$(".add-center").addClass("text-center");
+		$(".ctable").addClass("ctable-center");
 	}
 	else {
-		$(".ctable").css("margin-left", "50px");
-		$(".ctable").css("margin-top", "7px;");
-		//$(".vertical-line").show();
-	}
-	if(w < 576) {
-		$(".vertical-line").hide();
-	}
-	else {
-		$(".vertical-line").show();
+		$(".add-center").removeClass("text-center");
+		$(".ctable").removeClass("ctable-center");	
 	}
 	if(w < 768) {
-			smallScreenBoom();
+		smallScreenBoom();
 	}
 	else bigScreenBoom();
+	if(w < 576) {
+		//$("html").hide();
+		$(".bh-styling").css("font-size", "22px");
+		$(".banner-image").css("height", "180px");
+		$(".container-for-just-a-heading").css({"padding-top": "60px", "padding-bottom": "60px"});
+	}
+	else {
+		$(".bh-styling").css("font-size", "30px");
+		$(".banner-image").css("height", "300px");
+		$(".container-for-just-a-heading").css({"padding-top": "120px", "padding-bottom": "120px"});	
+	}
+	
 	$(window).resize(function() {
 		var w = $(window).width();
+		if(w < 1200) {
+			$(".buttonDownload").css("margin-left", "0");	
+		}
+		else {
+			$(".buttonDownload").css("margin-left", "50px");	
+		}
 		if(w < 992) {
-			$(".ctable").css("margin-left", "0");
-			$(".ctable").css("margin-top", "0");
-			
+			$(".add-center").addClass("text-center");
+			$(".ctable").addClass("ctable-center");
 		}
 		else {
-			$(".ctable").css("margin-left", "50px");
-			$(".ctable").css("margin-top", "7px;");	
-			
-		}
-		if(w < 576) {
-			$(".vertical-line").hide();
-		}
-		else {
-			$(".vertical-line").show();
+			$(".add-center").removeClass("text-center");
+			$(".ctable").removeClass("ctable-center");	
 		}
 		if(w < 768) {
 			smallScreenBoom();
 		}
 		else bigScreenBoom();
+		if(w < 576) {
+			//$("html").hide();
+			$(".bh-styling").css("font-size", "22px");
+			$(".banner-image").css("height", "180px");
+			$(".container-for-just-a-heading").css({"padding-top": "60px", "padding-bottom": "60px"});
+		}
+		else {
+			$(".bh-styling").css("font-size", "30px");
+			$(".banner-image").css("height", "300px");
+			$(".container-for-just-a-heading").css({"padding-top": "120px", "padding-bottom": "120px"});	
+		}
 	});
 });
