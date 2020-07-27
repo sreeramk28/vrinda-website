@@ -16,6 +16,7 @@ td {
 td > span {
 
 }
+
 .jumbotro {
 	margin: 0;
 	padding: 0;
@@ -81,11 +82,21 @@ textarea:focus {
 }
 
 .col-bg-2 {
-	background-color: #F1F2F2;
+	background-color: #FFFF;
 	font-size: 13px;
 }
+
+@media screen and (min-width: 767px) {
+	.col-mgn-2 {
+		border-right: 1px solid #d3d3d3;
+		padding-top: 10px;
+	}
+}
 .col-mgn-2 {
-	margin: 15px;
+	padding-top: 10px;
+}
+.col-mgn-3 {
+	
 	padding-top: 10px;
 }
 @media screen and (max-width: 600px) {

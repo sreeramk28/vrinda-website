@@ -10,7 +10,7 @@ $(document).ready(function() {
 		person-email
 	*/
 	var sec_ids = ["inter_rec", "perm_rec", "staffing", "recpo"];
-	var bheads = ["International<br> Recruitment", "Permanent<br> Recruitment", "Staffing Solutions", "Recruitment<br> Process<br> Outsourcing"];
+	var bheads = ["International<br> Recruitment", "Permanent<br> Recruitment", "Staffing Solutions", "Recruitment Process<br> Outsourcing"];
 	var bimgs = ["assets/s2.jpeg", "assets/s3.jpeg", "assets/s4.jpeg", "assets/s5.jpeg"];
 	var pnames = ["Siddarth Puri", "Dipankar Dutt", "Sarvjeet Singh Midha", "Siddarth Puri"];
 	var pmails = ["siddarth@vrindaglobal.com", "dipankar@vrindaglobal.com", "sarvjeet@vrindaglobal.com", "siddarth@vrindaglobal.com"];
