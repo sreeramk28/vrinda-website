@@ -40,13 +40,8 @@ rashi, manoj, sakshi-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
      <script type="text/javascript">
-     	$(document).ready(function() {
-     	var achievement_point = $('#achievement_begin').offset().top;
-    	
-    		$(window).scroll(function() {
-    			
-    			if($(this).scrollTop() > achievement_point) {
-    				$('.counter').each(function() {
+     	function go() {
+     		$('.counter').each(function() {
 		  			var $this = $(this),
 		      		countTo = $this.attr('data-count');
 		  
@@ -67,7 +62,16 @@ rashi, manoj, sakshi-->
 		    			}
 
 		  			});  
-		  		});
+		  			});
+     	}
+     	$(document).ready(function() {
+     	var achievement_point = $('#achievement_begin').offset().top;
+    	if($(this).scrollTop() > achievement_point) {
+    		go();
+    	}
+    	$(window).scroll(function() {
+    		if($(this).scrollTop() > achievement_point) {
+    			go();
 		  	}
 	    });
   		$('.card').hover(
@@ -151,21 +155,17 @@ rashi, manoj, sakshi-->
         </nav>
 
 
-	<div style="height: 291px; background-image: url('assets/abtbanner.jpeg'); background-repeat: no-repeat; background-size: cover;"> 
-     <div class="container">
-      <div class="row">
-        <div class="col-md-1">
+	<div class="banner-image" style="background: url('assets/abtbanner.jpeg') no-repeat center bottom/cover; height: 300px;">
+      <div class="container-for-just-a-heading container" style="padding-top: 120px; padding-bottom: 120px;">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+             <p class="bh-styling banner-head">About Us <br> <span style="font-size: 16px; font-weight: 400;">We know the art of recruitment</span> </p>
+          </div>
+          <div class="col-md-1"></div>
         </div>
-        <div class="col">
-          <h2 style="font-weight: 700; color: #fff; margin-top: 110px;"> ABOUT US </h2>
-          <p style="font-size: 20px; color: #fff;">
-	          We know the art of recruitment
-	      </p>
-        </div>
-        <div class="col-md-1"></div>
       </div>
     </div>
-  	</div>
 	<div class="jumbotron jumbotron-fluid jumbostyle class_full_h">
 		
 	    <br>
@@ -213,9 +213,9 @@ rashi, manoj, sakshi-->
 	    <div class="container">
 	    	<br>
 	    	<div class="row">
-		    	<div class="col-lg-1">
+		    	<div class="col-md-1 col-rem">
 		    	</div>
-		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    	<div class="col-xs-12 col-md">
 		    		<div class="card">
 					  <img class="card-img-top gray-toggle" height="240" src="assets/Prashant2.jpeg" alt="Card image cap">
 					  <div class="card-body text-center">
@@ -238,7 +238,7 @@ rashi, manoj, sakshi-->
 					  </div>
 					</div>
 		    	</div>
-		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    	<div class="col-xs-12 col-md">
 		    		<div class="card">
 
 					  <img class="card-img-top gray-toggle" height="240" src="assets/SM.png" alt="Card image cap">
@@ -261,7 +261,7 @@ rashi, manoj, sakshi-->
 					  </div>
 					</div>
 		    	</div>
-		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    	<div class="col-xs-12 col-md">
 		    		<div class="card">
 
 					  <img class="card-img-top gray-toggle" height="240" src="assets/Sarvjeet.jpg" alt="Card image cap">
@@ -284,14 +284,14 @@ rashi, manoj, sakshi-->
 					  </div>
 					</div>
 		    	</div>
-		    	<div class="col-lg-1">
+		    	<div class="col-md-1 col-rem">
 		    	</div>
 		    </div>
 		    <div class="row">
 		    	<br>
 		    </div>
 		    <div class="row">
-		    	<div class="col-lg-1">
+		    	<div class="col-md-1 col-rem">
 		    	</div>
 		    	<!--div class="col-md">
 		    		<div class="card">
@@ -338,7 +338,7 @@ rashi, manoj, sakshi-->
 					  </div>
 					</div>
 		    	</div-->
-		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    	<div class="col-xs-12 col-md">
 		    		<div class="card">
 
 					  <img class="card-img-top gray-toggle" height="240" src="assets/Siddarth.jpg" alt="Card image cap">
@@ -362,7 +362,7 @@ rashi, manoj, sakshi-->
 
 					</div>
 		    	</div>
-		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    	<div class="col-xs-12 col-md">
 		    		<div class="card">
 					  <img class="card-img-top gray-toggle" height="240" src="assets/Kamal.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
@@ -386,7 +386,7 @@ rashi, manoj, sakshi-->
 					  </div>
 					</div>
 		    	</div>
-		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    	<div class="col-xs-12 col-md">
 		    		<div class="card">
 
 					  <img class="card-img-top gray-toggle" height="240" src="assets/Dipankar.jpg" alt="Card image cap">
@@ -410,7 +410,7 @@ rashi, manoj, sakshi-->
 					  </div>
 					</div>
 		    	</div>
-		    	<div class="col-lg-1">
+		    	<div class="col-md-1 col-rem">
 		    	</div>
 		    </div>
 	    </div>
@@ -428,20 +428,21 @@ rashi, manoj, sakshi-->
 	</div>
 	<div id="id_delivery_teams"></div>
 	<br><br>
+
     <section>
     	<div class="container">
 		    
 		    <div class="row">
-		    	<div class="col-lg-1">
+		    	<div class="col-md-1 col-rem">
 		    	</div>
-		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    	<div class="col-xs-12 col-md">
 		    		<div class="card card-border">
 
 					  <img class="card-img-top gray-toggle" height="280" src="assets/Rashi Chaudhary.jpg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title title-margin"><b>Rashi Chaudhary</b></p>	
 					  	<p class="designation"> Team Lead International </p>
-					    <p class="card-text profile-description">
+					    <p class="card-text profile-description-2">
 					    	High-energy Sourcing Specialist, who strives to build long-term, mutually beneficial relationships with candidates and clients alike. Rashi is responsible for recruiting talent from US, UK, UAE, New Zealand and India for the Real Estate, Healthcare, Technology etc. 
 					    </p>
 					    <hr style="padding-bottom: 8px;">
@@ -457,60 +458,18 @@ rashi, manoj, sakshi-->
 					  </div>
 					</div>
 		    	</div>
-		    	<!--div class="col-md">
-		    		<div class="card">
-					  <img class="card-img-top gray-toggle" height="240" src="assets/Vishal.jpg" alt="Card image cap">
-					  <div class="card-body text-center">
-					  	<p class="card-title title-margin"><b>Vishal Nagpal</b></p>
-					  	<p class="designation"> Team Lead </p>
-					    <p class="card-text profile-description">
-					    	Vishal is Competent Professional with 3+ Years of Experience in the field of Recruitment and Talent Management. Started his career with Vrinda Global Pvt Ltd since 2016. He is responsible for delivery of Building Material and Facility and security domain.  
-					    </p>
-					    <hr style="padding-bottom: 8px;">
-						<div class="text-center">
-							<a href="mailto:services@vrindaglobal.com">
-							<img class="px-2" width="30" style="" src="assets/icon-01.png"></a>
-							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="30" style="" 
-							src="assets/icon-02.png"></a>
-							<a href="#!"><img class="px-2" width="30" style="" src="assets/icon-03.png"></a>
-							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" width="30" style="" 
-							src="assets/icon-04.png"></a>
-						</div>
-					  </div>
-					</div>
-		    	</div>
-		    	<div class="col-md">
-		    		<div class="card">
-
-					  <img class="card-img-top gray-toggle" height="240" src="assets/Sonia.png" alt="Card image cap">
-					  <div class="card-body text-center">
-					  	 <p class="card-title title-margin"><b>Sonia Narula</b></p>
-					  	 <p class="designation"> Team Lead </p> 
-					    <p class="card-text profile-description">
-					    	Sonia is passionate, an integral Talent acquisition professional with over 10 years of experience of working in Executive Search Space. Her expertise lies in senior leadership and management hiring which involves delivering across strategic assignments. 
-						</p>
-						<hr style="padding-bottom: 8px;">
-						<div class="text-center">
-							<a href="mailto:sonia@vrindaconsultants.com">
-							<img class="px-2" width="30" style="" src="assets/icon-01.png"></a>
-							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="30" style="" 
-							src="assets/icon-02.png"></a>
-							<a href="#!"><img class="px-2" width="30" style="" src="assets/icon-03.png"></a>
-							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" width="30" style="" 
-							src="assets/icon-04.png"></a>
-						</div>
-					  </div>
-					</div>
-		    	</div-->
-		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    	
+		    	<div class="col-xs-12 col-md">
 		    		<div class="card card-border">
-
+		    		  
 					  <img class="card-img-top gray-toggle" height="280" src="assets/Manoj.png" alt="Card image cap">
+					  <div id="achievement_begin"></div>
 					  <div class="card-body text-center">
+
 					  	<p class="card-title title-margin"><b>Manoj Kumar</b></p>	
 					  	<p class="designation"> Vertical Head </p>
-					    <p class="card-text profile-description">
-					    	Manoj manages Vrinda’s Key Client Relationship & Service Delivery majorly for leading Conglomerates into FMCG, ITES, Building Materials Industry. He comes with 15 years of diverse experience. He has successfully partnered with the key clients.
+					    <p class="card-text profile-description-2">
+					    	Manoj manages Vrinda’s Key Client Relationship & Service Delivery majorly for leading Conglomerates into FMCG, ITES, Building Materials Industry. With 15 years of diverse experience, he has successfully partnered with the key clients.
 					    </p>
 					    <hr style="padding-bottom: 8px;">
 						<div class="text-center">
@@ -525,15 +484,15 @@ rashi, manoj, sakshi-->
 					  </div>
 					</div>
 		    	</div>
-		    	<div class="col-xs-12 col-sm-6 col-lg">
+		    	<div class="col-xs-12 col-md">
 		    		<div class="card card-border">
 					  <img class="card-img-top gray-toggle" height="280" src="assets/Sakshi Makkar.jpeg" alt="Card image cap">
 					  <div class="card-body text-center">
 					  	<p class="card-title title-margin"><b>Sakshi Makkar</b></p>
 					  	<p class="designation"> Head - Oil and Gas </p>
-					    <p class="card-text profile-description">
+					    <p class="card-text profile-description-2">
 					    	Sakshi Makkar specializes in executive search. She has ten years of experience and has worked across industries in India as well as
-					    	Internationally. She is a great leader.<br> Sakshi heads Oil and Gas here in Vrinda Global.<br>
+					    	Internationally. She is a great leader. Sakshi heads Oil and Gas here in Vrinda Global.
 					    </p>
 					    <hr style="padding-bottom: 8px;">
 						<div class="text-center">
@@ -549,99 +508,14 @@ rashi, manoj, sakshi-->
 					  </div>
 					</div>
 		    	</div>
-		    	<div class="col-md-1">
+		    	<div class="col-md-1 col-rem">
 		    	</div>
 		    </div>
-		    <br>
-		    <!--div class="row">
-		    	<div class="col-md-1">
-		    	</div>
-		    	<div class="col-md">
-		    		<div class="card">
-					  <img class="card-img-top gray-toggle" height="240" src="assets/Monika.jpg" alt="Card image cap">
-					  <div class="card-body text-center">
-					  	<p class="card-title title-margin"><b>Monika Kukreja</b></p>
-					  	<p class="designation"> Vertical Head </p>
-					    <p class="card-text profile-description">
-					    	Monika joined team Vrinda in 2012. She has total 8 years of experience purely in Global Hiring for Multiple Engineering Roles. 
-					    	She has also been engaged in Automotive and Healthcare to attract and place the right talent.  
-					    </p>
-					    <hr style="padding-bottom: 8px;">
-						<div class="text-center">
-							<a href="mailto:services@vrindaglobal.com">
-							<img class="px-2" width="30" style="" src="assets/icon-01.png"></a>
-							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="30" style="" 
-							src="assets/icon-02.png"></a>
-							<a href="#!"><img class="px-2" width="30" style="" src="assets/icon-03.png"></a>
-							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" width="30" style="" 
-							src="assets/icon-04.png"></a>
-						</div>
-					  </div>
-					</div>
-		    	</div>
-		    	<div class="col-md">
-		    		<div class="card">
 
-					  <img class="card-img-top gray-toggle" height="240" src="assets/Rahul.jpg" alt="Card image cap">
-					  <div class="card-body text-center">
-					  	 <p class="card-title title-margin"><b>Rahul Sharma</b></p>
-					  	 <p class="designation"> BFSI Vertical Head  </p> 
-					    <p class="card-text profile-description">
-					    	A Recruitment Consultant with 9 years experience with specialization in Banking & financial industry hiring. Managing sales & recruitment for banks, NBFC’s & Insurance in Pan India. He represents a candidate through all phases of hiring. 
-						</p>
-						<hr style="padding-bottom: 8px;">
-						<div class="text-center">
-							<a href="mailto:services@vrindaglobal.com">
-							<img class="px-2" width="30" style="" src="assets/icon-01.png"></a>
-							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="30" style="" 
-							src="assets/icon-02.png"></a>
-							<a href="#!"><img class="px-2" width="30" style="" src="assets/icon-03.png"></a>
-							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" width="30" style="" 
-							src="assets/icon-04.png"></a>
-						</div>
-					  </div>
-					</div>
-		    	</div>
-		    	<div class="col-md">
-		    		<div class="card">
-
-					  <img class="card-img-top gray-toggle" height="240" src="assets/Meenakshi.png" alt="Card image cap">
-					  <div class="card-body text-center">
-					  	<p class="card-title title-margin"><b>Meenakshi Chopra</b></p>	
-					  	<p class="designation">  BFSI Vertical Head </p>
-					    <p class="card-text profile-description">
-					    	Meenakshi joined Vrinda in 2012 as a Recruitment Consultant in Banking and Finance Industry. Now, she heads Delivery for Branch and Retail banking. She specializes in answering questions in Leadership and Talent strategies. 
-					    </p>
-					    <hr style="padding-bottom: 8px;">
-						<div class="text-center">
-							<a href="mailto:meenakshi@vrindaconsultants.com">
-							<img class="px-2" width="30" style="" src="assets/icon-01.png"></a>
-							<a href="https://www.linkedin.com/company/vrinda-consultants"><img class="px-2" width="30" style="" 
-							src="assets/icon-02.png"></a>
-							<a href="#!"><img class="px-2" width="30" style="" src="assets/icon-03.png"></a>
-							<a href="https://www.facebook.com/Vrindaconsultants"><img class="px-2" width="30" style="" 
-							src="assets/icon-04.png"></a>
-						</div>
-					  </div>
-					</div>
-		    	</div>
-		    	<div class="col-md-1">
-		    	</div>
-		    </div>
 		    <br>
-		    <div class="row">
-		    	<div class="col-md-1">
-		    	</div>
-		    	
-		    	<div class="col-md">
-		    	</div>
-		    	<div class="col-md">
-		    	</div>
-		    	<div class="col-md-1">
-		    	</div>
-		    </div-->
+		    
 		</div>
-		<div id="achievement_begin"></div>
+		
 		<br><br>
     	
     </section>
@@ -793,35 +667,29 @@ rashi, manoj, sakshi-->
 
 		<!-- Footer section -->
 <div class="container">
-			<div class="row">
+      <div class="row">
           <div class="col-md-1"></div>
-  				<div class="col-md-5 fborder"></div>
-  				<div class="col-md-6"></div>
-  		</div>
-	</div>
-	<div class="jumbotron class_footer_jumbo">
-			<footer class="page-footer font-small">
-  		<div class="container text-center text-md-left">
-    		<div class="row">
+          <div class="col-md-5 fborder"></div>
+          <div class="col-md-6"></div>
+      </div>
+  </div>
+  <div class="jumbotron class_footer_jumbo">
+      <footer class="page-footer font-small">
+      <div class="container text-center text-md-left">
+        <div class="row">
             <div class="col-md-1"></div>
-      			<div class="col-md-5 mx-auto class_footer_text1">
-        			<div class="class_footer_brand_image">
+            <div class="col-md-5 mx-auto class_footer_text1">
+              <div class="class_footer_brand_image">
                 <img class="img-fluid" src="assets/Asset 7Vrinda Services.png">
 
               </div>
-        			<p>Incorporated in 2006, this entrepreneurial journey has
-						metamorphosed to a transnational organisation with business
-						operations in Asia, Australia, Europe & US. Our Clients include 32 fortune 100
-						companies. Strong sectoral expertise, experience and consistency
-						made the way for success.
-        			</p>
-              <div class="class_icon_mage_contact_div">
-                  <div class="class_footer_icon_image">
-                    <img src="assets/Contact Us Home .png">
-                  </div>
-                  <p class="class_footer_contact"><a href="tel:91 9789753200">+91 9789 753 200</a>
-                  </p>
-              </div>
+              <p>Incorporated in 2006, this entrepreneurial journey has
+            metamorphosed to a transnational organisation with business
+            operations in Asia, Australia, Europe & US. Our Clients include 32 fortune 100
+            companies. Strong sectoral expertise, experience and consistency
+            made the way for success.
+              </p>
+              
               <div class="class_icon_mage_contact_div">
                   <div class="class_footer_icon_image">
                     <img src="assets/Mail IconHome .png">
@@ -830,13 +698,13 @@ rashi, manoj, sakshi-->
                     <a href = "mailto: support@vrindaglobal.com">support@vrindaglobal.com</a>
                   </p>
               </div>
-        				<!-- <p><img src="assets/Contact Us Home .png"> +91 9789 753 200</p>
-        				<p><img src="assets/Mail IconHome .png">support@vrindaglobal.com</p> -->  		
+                <!-- <p><img src="assets/Contact Us Home .png"> +91 9789 753 200</p>
+                <p><img src="assets/Mail IconHome .png">support@vrindaglobal.com</p> -->      
             </div>
       <!-- <hr class="clearfix w-100 d-md-none"> -->
             <div class="col-md-5" >
               <div class="row class_footer_right_half_row" >
-                <div class="col class_footer_get_in_touch" >
+                <div class="col-6 col-sm class_footer_get_in_touch" >
                   <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Get in Touch</p>
                   <ul class="list-unstyled">
                     <li>
@@ -868,7 +736,7 @@ rashi, manoj, sakshi-->
                     </li>
                   </ul>
                 </div>
-                <div class="col class_footer_site_map">
+                <div class="col-6 col-sm class_footer_site_map lu-mgn">
                   <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Site Map</p>
 
                     <ul class="list-unstyled">
@@ -890,33 +758,39 @@ rashi, manoj, sakshi-->
                       </li>
                     </ul>
                 </div>
-
-                <div class="col mx-auto class_footer_latest_updates">
+                <div class="col-12 col-sm mx-auto class_footer_latest_updates"  style="padding-left: 0;">
                   <p class="font-weight-bold mt-3 mb-4 class_footer_section_header">Latest Updates</p>
                   <div>
-                    <p><i>May 06, 2020</i></p>
-                    <p><span>HR Surey Report</span></p>
+                    
+                    <p><span>HR Surey Report:</span></p>
                     <p>Impact of COVID-19 onbusiness sector</p>
                   </div>
-                  <div>
-                    <p><i>April 12, 2020</i></p>
-                    <p><span>Gender Diversity</span></p>
+                  <div style="margin-bottom: 0;">
+                    
+                    <p><span>Gender Diversity:</span></p>
                     <p>Effects, insights on gender diversity in the workforce</p>
                   </div>
                 </div>
+                
 
 
               </div>
             </div>
             <div class="col-md-1"></div>
     </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      
+      <div class="col-md-1"></div>
+
+    </div>
   </div>
 </footer>
 </div>
 
 <div class="jumbotron class_copyright_jumbo">
-	<div class="container">
-		<div class="footer-copyright py-3">
+  <div class="container">
+    <div class="footer-copyright py-3">
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-11">
@@ -927,25 +801,24 @@ rashi, manoj, sakshi-->
             <a href="tnc.html">Terms & Conditions</a>
             <a href="#!" id="id_cookie_popup">Cookies</a>
             <a href="disclaimer.html" style="border: none;">Privacy Statement</a>
-          </div>
+          </div> 
         </div>
         <div class="col-md-1"></div>
       </div>
-  		</div>
-	</div>
+      </div>
+  </div>
 </div>
 
-
-<!--script type="text/javascript" src="js/carousel_run.js"></script-->
 <!-- cookies -->
 
 <div class="cookie-banner" style="display: none">
-	<p>
-    	By using our website, you agree to our 
-    	<a href="tnc.html">cookie policy</a>
-  	</p>
+  <p>
+      By using our website, you agree to our 
+      <a href="tnc.html">cookie policy</a>
+  </p>
   <button class="close">&times;</button>
 </div>
+<script type="text/javascript" src="js/hover.js"></script>
 
 <script>
     $(document).ready(function() {
@@ -958,5 +831,6 @@ rashi, manoj, sakshi-->
       
     });
 </script>
+<script type="text/javascript" src="js/about.js"></script>
 </body>
 </html>

@@ -88,4 +88,16 @@ hr {
 	color:#9f9f9f; 
 	font-size: 13px; 
 	padding-bottom: 10px; 
+	height: 150px;
+}
+.profile-description-2 {
+	color:#9f9f9f; 
+	font-size: 13px; 
+	padding-bottom: 10px; 
+	height: 200px;
+}
+.bh-styling {
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
 }
