@@ -37,6 +37,7 @@ hr {
 	border: 0;
 	border-radius: 0;
 	box-shadow: 2px 2px 3px -1px #e8eAeA;
+	margin-bottom: 2rem;
 }
 .card-border {
 	border: 1px solid #f2f2f2;
@@ -88,16 +89,21 @@ hr {
 	color:#9f9f9f; 
 	font-size: 13px; 
 	padding-bottom: 10px; 
-	height: 150px;
+	margin-top: 16px;
+	height: 120px;
 }
 .profile-description-2 {
 	color:#9f9f9f; 
 	font-size: 13px; 
 	padding-bottom: 10px; 
-	height: 200px;
+	height: 150px;
 }
 .bh-styling {
 	font-size: 30px;
 	font-weight: 700;
 	color: #fff;
+}
+.achi-table-center {
+	margin: 0 auto;
+	text-align: left;
 }
