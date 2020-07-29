@@ -37,7 +37,7 @@ $(document).ready(function() {
       // $('#id_carousel_jumbo').fadeOut(1000, function() {
       //   $(this).css("background", "url('assets/01.jpg') no-repeat center bottom/cover").fadeIn(1000);
       // });
-      jumbo.style.background = "url('assets/test/01.jpg') no-repeat center bottom/" + background_size;
+      jumbo.style.background = "url('assets/01.jpg') no-repeat center bottom/" + background_size;
       $(".carousel_mob_heading").html(head1);
       $(".carousel_mob_description").html(desc1);
       document.getElementById("chop_mob").href = loc1;
@@ -59,7 +59,7 @@ $(document).ready(function() {
       // $('#id_carousel_jumbo').fadeOut(1000, function() {
       //   $(this).css("background", "url('assets/02.jpg') no-repeat center bottom/cover").fadeIn(1000);
       // });
-      jumbo.style.background = "url('assets/test/02.png') no-repeat center bottom/" + background_size;
+      jumbo.style.background = "url('assets/02.jpg') no-repeat center bottom/" + background_size;
       $(".carousel_mob_heading").html(head2);
       $(".carousel_mob_description").html(desc2);
       document.getElementById("chop_mob").href = loc2;
@@ -81,7 +81,7 @@ $(document).ready(function() {
       // $('#id_carousel_jumbo').fadeOut(1000, function() {
       //   $(this).css("background", "url('assets/03.jpg') no-repeat center bottom/cover").fadeIn(1000);
       // });
-      jumbo.style.background = "url('assets/test/03.jpg') no-repeat center bottom/" + background_size; 
+      jumbo.style.background = "url('assets/03.jpg') no-repeat center bottom/" + background_size; 
       $(".carousel_mob_heading").html(head3);
       $(".carousel_mob_description").html(desc3);
       document.getElementById("chop_mob").href = loc3;
@@ -99,7 +99,7 @@ $(document).ready(function() {
       document.getElementById("id_carousel_heading").innerHTML = "Staffing Solutions";
       document.getElementById("id_carousel_description").innerHTML = 
       "With trained personnel & technology, we help your<br> business with a cost-effective staffing solutions<br> which strengthens efficiency, productivity<br> across skill sets.";
-      jumbo.style.background = "url('assets/test/04.jpg') no-repeat center bottom/" + background_size;
+      jumbo.style.background = "url('assets/04.jpg') no-repeat center bottom/" + background_size;
       // $('#id_carousel_jumbo').fadeOut(1000, function() {
       //   $(this).css("background", "url('assets/04.jpg') no-repeat center bottom/cover").fadeIn(1000);
       // });
