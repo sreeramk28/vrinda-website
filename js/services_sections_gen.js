@@ -11,7 +11,7 @@ $(document).ready(function() {
 	*/
 	var sec_ids = ["inter_rec", "perm_rec", "staffing", "recpo"];
 	var bheads = ["International<br> Recruitment", "Permanent<br> Recruitment", "Staffing Solutions", "Recruitment Process<br> Outsourcing"];
-	var bimgs = ["assets/s1.jpg", "assets/s2.jpg", "assets/s3.jpg", "assets/s4.jpg"];
+	var bimgs = ["assets/s2.jpg", "assets/s3.jpg", "assets/s4.jpg", "assets/s5.jpg"];
 	var pnames = ["Siddarth Puri", "Dipankar Dutt", "Sarvjeet Singh Midha", "Siddarth Puri"];
 	var pmails = ["siddarth@vrindaglobal.com", "dipankar@vrindaglobal.com", "sarvjeet@vrindaglobal.com", "siddarth@vrindaglobal.com"];
 	var sec2_icon_descs = ["Transnational Organisation", "Dedicated Team", "Systematic, process driven approach", "Access of Global Talent", "14+ Years of Experience"];
