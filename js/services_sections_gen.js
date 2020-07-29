@@ -77,7 +77,7 @@ $(document).ready(function() {
 			}
 		}
 		else {
-			$(".service-section .bd-styling").last().html("As a talent advisor with deep expertise, world class resources, and a focus on innovation, we can help you tackle even the most complex andchallenging talent needs. You can leverage our experience of working across geographies and industries to streamline recruitment process outsourcing solutions that contribute to improved productivity and performance. Partner with us to experience tailor-made RPO solutions to drive your business.");
+			$(".service-section .bd-styling").last().html("As a talent advisor with deep expertise, world class resources, and a focus on innovation, we can help you tackle even the most complex andchallenging talent needs. You can leverage our experience of working across geographies and industries to streamline recruitment process outsourcing solutions that contribute to improved productivity and performance.<br><br> Partner with us to experience tailor-made RPO solutions to drive your business.");
 			var n = $(".service-section .icon-image").length;
 			cnt = 0;
 			for(var j = n - 4; j < n; j++) {
