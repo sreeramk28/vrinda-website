@@ -43,13 +43,22 @@ $(document).ready(function() {
 		$(".bh-styling").css("font-size", "22px");
 		$(".banner-image").css("height", "180px");
 		$(".container-for-just-a-heading").css({"padding-top": "60px", "padding-bottom": "60px"});
+		$(".bd-styling").addClass("mx-2");
+		$(".class_we_are_diff").css({"margin-left":"18px", "margin-right":"18px"});
 	}
 	else {
 		$(".bh-styling").css("font-size", "30px");
 		$(".banner-image").css("height", "300px");
-		$(".container-for-just-a-heading").css({"padding-top": "120px", "padding-bottom": "120px"});	
+		$(".container-for-just-a-heading").css({"padding-top": "120px", "padding-bottom": "120px"});
+		$(".bd-styling").removeClass("mx-2");
+		$(".class_we_are_diff").css({"margin-left":"10px", "margin-right":"10px"});	
 	}
-	
+	if(w < 496) {
+		$(".class_know_more_full").addClass("col-12");
+	}
+	else {
+		$(".class_know_more_full").removeClass("col-12");
+	}
 	$(window).resize(function() {
 		var w = $(window).width();
 		if(w < 1200) {
@@ -75,11 +84,21 @@ $(document).ready(function() {
 			$(".bh-styling").css("font-size", "22px");
 			$(".banner-image").css("height", "180px");
 			$(".container-for-just-a-heading").css({"padding-top": "60px", "padding-bottom": "60px"});
+			$(".bd-styling").addClass("mx-2");
+			$(".class_we_are_diff").css({"margin-left":"18px", "margin-right":"18px"});
 		}
 		else {
 			$(".bh-styling").css("font-size", "30px");
 			$(".banner-image").css("height", "300px");
 			$(".container-for-just-a-heading").css({"padding-top": "120px", "padding-bottom": "120px"});	
+			$(".bd-styling").removeClass("mx-2");
+			$(".class_we_are_diff").css({"margin-left":"10px", "margin-right":"10px"});
+		}
+		if(w < 496) {
+			$(".class_know_more_full").addClass("col-12");
+		}
+		else {
+			$(".class_know_more_full").removeClass("col-12");
 		}
 	});
 });
