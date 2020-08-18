@@ -93,6 +93,13 @@ $(document).ready(function() {
 		}
 		else {
 			$(".col-mgn").removeClass("col-bord");
+
+		}
+		if(w < 768) {
+			addSeparator();
+		}
+		else {
+			removeSeparator();
 		}
 	});
 });
