@@ -11,11 +11,11 @@ $(document).ready(function() {
     var desc4 = "With trained personnel & technology, we help your business with a cost-effective staffing solutions which strengthens efficiency, productivity across skill sets."; 
     var head5 = "Recruitment Process Outsourcing"; 
     var desc5 = "With deep expertise, world class resources, and a focus on innovation, we can help you tackle even the most complex and challenging talent needs.";
-    var loc1 = "services.html#execsearch";
-    var loc2 = "services.html#inter_rec";
-    var loc3 = "services.html#perm_rec";
-    var loc4 = "services.html#staffing";
-    var loc5 = "services.html#recpo";
+    var loc1 = "executive-search.html";
+    var loc2 = "international-recruitment.html";
+    var loc3 = "permanent-recruitment.html";
+    var loc4 = "staffing-solutions.html";
+    var loc5 = "recruitment-process-outs.html";
     $(".class_navbar_custom2").hide();
 
     var carousel_content;

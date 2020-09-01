@@ -14,9 +14,7 @@ body {
 }
 .opener {
 	height: 28rem; 
-	background-image: url('../assets/blogpic.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+	
 	position: relative;
 }
 .opener:hover {
@@ -24,6 +22,26 @@ body {
 }
 #opener-1 {
 	background-image: url('../assets/blogpic2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#opener-2 {
+	background-image: url('../assets/hcs.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#opener-5 {
+	background-image: url('../assets/blogpic.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#opener-3 {
+	background-image: url('../assets/relcomp.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#opener-4 {
+	background-image: url('../assets/relcomp2.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
